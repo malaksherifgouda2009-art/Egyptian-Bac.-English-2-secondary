@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#6d28d9">
+
+<!-- Social sharing meta tags -->
+<title>Comprehensive Vocabulary – Egyptian Baccalaureate English 2nd Year</title>
+<meta name="description" content="Units 1–5 vocabulary, word families, quizzes and 2 native-speaker voices. Mr. Sherif Gouda.">
+<meta property="og:title" content="Comprehensive Vocabulary – Egyptian Baccalaureate English 2nd Year">
+<meta property="og:description" content="Units 1–5 · Word families · Quizzes · Native-speaker voices · Mr. Sherif Gouda">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vocabulary Workbook">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Comprehensive Vocabulary – Egyptian Baccalaureate">
+<meta name="twitter:description" content="Native-speaker voices · Quizzes · Works offline">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Vocabulary">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+
+<style>
+:root{
+  --p1:#6d28d9; --p2:#8b5cf6; --amber:#f59e0b; --red:#e11d48;
+  --ar:#1d4ed8; --g1:#059669; --g2:#10b981; --g3:#34d399;
+  --ok:#10b981; --bad:#ef4444; --ink:#2b2b40; --bg:#f6f4ff;
+  --shadow:0 10px 30px rgba(109,40,217,.12);
+  --shadow-sm:0 4px 14px rgba(109,40,217,.10);
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  font-family:"Segoe UI",system-ui,-apple-system,"Noto Naskh Arabic",Arial,sans-serif;
+  background:var(--bg); color:var(--ink); min-height:100vh;
+  padding-top:calc(62px + env(safe-area-inset-top));
+  padding-bottom:calc(28px + env(safe-area-inset-bottom));
+  overflow-x:hidden;
+  -webkit-tap-highlight-color:transparent;
+}
+#mesh{
+  position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(139,92,246,.28), transparent 45%),
+    radial-gradient(circle at 82% 8%,  rgba(245,158,11,.18), transparent 42%),
+    radial-gradient(circle at 72% 82%, rgba(16,185,129,.20), transparent 46%),
+    radial-gradient(circle at 8% 88%,  rgba(29,78,216,.16), transparent 42%);
+  background-size:200% 200%;
+  animation:meshMove 28s ease-in-out infinite alternate;
+}
+@keyframes meshMove{ 0%{background-position:0% 0%;} 100%{background-position:100% 100%;} }
+
+/* ===== In-app browser banner ===== */
+#inAppBanner{
+  position:fixed; top:calc(58px + env(safe-area-inset-top)); left:0; right:0; z-index:75;
+  background:linear-gradient(135deg,#f59e0b,#fbbf24); color:#3b2600;
+  padding:11px 14px; font-size:13px; font-weight:700; line-height:1.4;
+  box-shadow:0 6px 20px rgba(245,158,11,.45);
+  display:flex; align-items:center; gap:10px;
+}
+#inAppBanner .banner-text{flex:1 1 auto; min-width:0;}
+#inAppBanner .banner-btn{
+  background:#3b2600; color:#fef3c7; border:0; border-radius:10px;
+  padding:8px 12px; font-size:12px; font-weight:800; font-family:inherit;
+  cursor:pointer; flex:0 0 auto; white-space:nowrap;
+}
+#inAppBanner .banner-close{
+  background:transparent; color:#3b2600; border:0; font-size:18px; font-weight:800;
+  cursor:pointer; padding:4px 8px; line-height:1; flex:0 0 auto;
+}
+
+#topbar{
+  position:fixed; top:0; left:0; right:0; z-index:60;
+  display:flex; align-items:center; gap:8px;
+  padding:calc(6px + env(safe-area-inset-top)) 10px 8px 10px;
+  background:linear-gradient(135deg,#6d28d9,#8b5cf6 55%,#a78bfa);
+  box-shadow:0 6px 22px rgba(109,40,217,.32);
+}
+.icon-btn{
+  position:relative;
+  border:0; cursor:pointer; border-radius:14px; padding:8px 10px;
+  font-size:18px; line-height:1; color:#fff;
+  background:rgba(255,255,255,.16); backdrop-filter:blur(6px);
+  transition:transform .15s ease, background .15s ease;
+  flex:0 0 auto;
+}
+.icon-btn:hover{background:rgba(255,255,255,.28); transform:translateY(-1px);}
+#speechDot{
+  position:absolute; top:5px; right:6px;
+  width:9px; height:9px; border-radius:50%;
+  background:#fbbf24; box-shadow:0 0 0 2px rgba(255,255,255,.5);
+  transition:background .2s ease;
+}
+#speechDot.ready{background:#10b981;}
+#speechDot.error{background:#ef4444;}
+#brand{flex:1 1 auto; min-width:0; text-align:center; color:#fff; line-height:1.15;}
+#brand .b1{font-weight:800; font-size:14.5px; letter-spacing:.2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+#brand .b2{font-size:10.5px; opacity:.9; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.top-right{display:flex; align-items:center; gap:6px; flex:0 0 auto;}
+.pill-btn{border:0; cursor:pointer; border-radius:999px; font-weight:800; font-size:11.5px; padding:7px 11px; line-height:1; white-space:nowrap;}
+.pill-btn.green{background:linear-gradient(135deg,#059669,#10b981); color:#fff; box-shadow:0 4px 12px rgba(16,185,129,.4);}
+.pill-btn.ghost{background:rgba(255,255,255,.2); color:#fff; font-weight:700;}
+.hidden{display:none !important;}
+
+#offlineBanner{
+  position:fixed; top:calc(58px + env(safe-area-inset-top)); left:0; right:0; z-index:59;
+  background:linear-gradient(135deg,#f59e0b,#fbbf24); color:#3b2600;
+  font-size:12.5px; font-weight:700; text-align:center; padding:6px 10px;
+  box-shadow:0 4px 12px rgba(245,158,11,.35);
+}
+
+#menuPanel{position:fixed; inset:0; z-index:80; background:rgba(43,25,80,.5); backdrop-filter:blur(4px); animation:fadeIn .18s ease;}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.menu-inner{
+  position:absolute; top:0; left:0; bottom:0; width:min(90vw,400px);
+  background:#fff; overflow-y:auto; padding:calc(14px + env(safe-area-inset-top)) 12px calc(24px + env(safe-area-inset-bottom)) 12px;
+  box-shadow:8px 0 34px rgba(60,20,120,.35);
+  animation:slideIn .24s cubic-bezier(.2,.8,.3,1);
+}
+@keyframes slideIn{from{transform:translateX(-100%)}to{transform:translateX(0)}}
+.menu-head{display:flex; align-items:center; justify-content:space-between; padding:4px 6px 12px; margin-bottom:8px; border-bottom:2px solid #f0edff;}
+.menu-head h2{margin:0; font-size:16px; font-weight:800; color:#6d28d9;}
+.menu-close{border:0; cursor:pointer; border-radius:12px; padding:7px 11px; background:#ede9fe; color:#6d28d9; font-weight:800; font-size:14px;}
+.ladder{position:relative; padding-left:16px;}
+.ladder::before{content:''; position:absolute; left:5px; top:8px; bottom:8px; width:3px; background:linear-gradient(180deg,#8b5cf6,#10b981); border-radius:3px;}
+.ladder-unit{position:relative; margin:16px 0 8px 0;}
+.ladder-unit::before{content:''; position:absolute; left:-16px; top:6px; width:12px; height:12px; border-radius:50%; background:#6d28d9; box-shadow:0 0 0 3px #ede9fe;}
+.ladder-unit-title{font-size:12px; font-weight:800; letter-spacing:.7px; text-transform:uppercase; color:#6d28d9; margin:0 0 6px 0; padding:2px 0;}
+.menu-item{
+  position:relative; display:block; width:100%; text-align:left; border:0; cursor:pointer;
+  background:#f7f5ff; color:#2b2b40; font-size:13px; font-weight:600;
+  padding:10px 12px 10px 14px; border-radius:12px; margin:4px 0;
+  transition:background .15s ease, transform .15s ease, box-shadow .15s ease;
+  font-family:inherit;
+}
+.menu-item::before{content:''; position:absolute; left:-11px; top:50%; transform:translateY(-50%); width:8px; height:2px; background:#c4b5fd;}
+.menu-item:hover{background:#ede9fe; transform:translateX(3px);}
+.menu-item.active{background:linear-gradient(135deg,#6d28d9,#8b5cf6); color:#fff; box-shadow:0 4px 12px rgba(109,40,217,.35);}
+.menu-item.home{background:linear-gradient(135deg,#059669,#10b981); color:#fff; font-weight:800; margin-bottom:10px;}
+.menu-item.home::before{background:#10b981;}
+
+main{max-width:960px; margin:0 auto; padding:14px 14px 40px;}
+.page{display:none; animation:fadeUp .28s ease;}
+.page.active{display:block;}
+@keyframes fadeUp{from{opacity:0; transform:translateY(10px)}to{opacity:1; transform:translateY(0)}}
+
+.page-header{border-radius:22px; padding:18px 18px; margin-bottom:16px; background:linear-gradient(135deg,#6d28d9,#8b5cf6 60%,#a78bfa); color:#fff; box-shadow:var(--shadow);}
+.page-header .eyebrow{font-size:11.5px; font-weight:800; letter-spacing:1.4px; text-transform:uppercase; opacity:.88;}
+.page-header h1{margin:6px 0 0; font-size:28px; font-weight:800; line-height:1.2;}
+
+.welcome-card{border-radius:24px; padding:30px 22px; text-align:center; color:#fff; background:linear-gradient(135deg,#6d28d9,#8b5cf6 55%,#a78bfa); box-shadow:0 16px 44px rgba(109,40,217,.32); margin-bottom:18px;}
+.welcome-card h1{font-size:30px; margin:0 0 10px; font-weight:800; line-height:1.25;}
+.welcome-card .sub{font-size:15px; opacity:.94; font-weight:600;}
+.welcome-card .author{display:inline-block; margin-top:16px; padding:9px 20px; border-radius:999px; background:rgba(255,255,255,.2); font-weight:800; font-size:16px; letter-spacing:.3px;}
+
+.speech-status-card{
+  display:flex; align-items:center; gap:12px;
+  background:#fff; border-radius:18px; padding:14px 16px;
+  margin-bottom:14px; box-shadow:var(--shadow-sm);
+  border-left:5px solid #8b5cf6;
+  transition:background .2s ease, border-color .2s ease;
+}
+.speech-status-card.ready{border-left-color:#10b981; background:#f0fdf4;}
+.speech-status-card.error{border-left-color:#ef4444; background:#fef2f2;}
+.speech-status-card.priming{border-left-color:#f59e0b; background:#fffbeb;}
+.ss-icon{font-size:26px; flex:0 0 auto; line-height:1;}
+.ss-text{flex:1 1 auto; min-width:0;}
+.ss-title{font-weight:800; font-size:13.5px; color:#2b2b40; line-height:1.3;}
+.ss-desc{font-size:11.5px; color:#6b7280; margin-top:3px; font-weight:600; line-height:1.4;}
+.ss-btn{
+  border:0; cursor:pointer; border-radius:10px; padding:8px 13px;
+  background:linear-gradient(135deg,#6d28d9,#8b5cf6); color:#fff;
+  font-weight:800; font-size:11.5px; font-family:inherit; flex:0 0 auto;
+  transition:transform .15s ease;
+}
+.ss-btn:hover{transform:translateY(-1px);}
+
+.settings-card{background:#fff; border-radius:22px; padding:16px; margin-bottom:16px; box-shadow:var(--shadow-sm); border:2px solid #ede9fe;}
+.settings-card h2{margin:0 0 12px 0; font-size:15px; font-weight:800; color:#6d28d9; display:flex; align-items:center; gap:8px;}
+.settings-card h2::before{content:''; width:8px; height:8px; border-radius:50%; background:linear-gradient(135deg,#6d28d9,#8b5cf6);}
+.settings-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+@media (max-width:560px){ .settings-grid{grid-template-columns:1fr;} }
+.setting-block{background:#faf8ff; border-radius:14px; padding:11px 12px;}
+.setting-block label{display:block; font-size:11px; font-weight:800; letter-spacing:.6px; text-transform:uppercase; color:#6d28d9; margin-bottom:7px;}
+.setting-block select{width:100%; border:2px solid #e9e3ff; border-radius:10px; padding:9px 10px; font-family:inherit; font-size:13px; font-weight:700; color:#2b2b40; background:#fff; cursor:pointer;}
+.setting-block select:focus{outline:none; border-color:#8b5cf6;}
+.setting-block .hint{font-size:10.5px; color:#6b7280; font-weight:600; margin-top:6px; line-height:1.4;}
+.setting-block .row{display:flex; align-items:center; gap:8px;}
+.setting-block input[type=range]{flex:1; accent-color:#6d28d9;}
+.setting-block .val{font-size:12px; font-weight:800; color:#6d28d9; min-width:48px; text-align:right;}
+.settings-actions{display:flex; gap:8px; margin-top:12px; flex-wrap:wrap;}
+.settings-actions .btn{flex:1 1 auto; min-width:130px;}
+
+.voice-status{
+  font-size:11px; font-weight:800; padding:6px 10px; border-radius:10px;
+  background:#f0fdf4; color:#047857; border:1px solid #a7f3d0; margin-bottom:10px;
+  display:flex; align-items:center; gap:6px; line-height:1.4;
+}
+.voice-status.warn{background:#fef3c7; color:#92400e; border-color:#fcd34d;}
+.voice-status.loading{background:#eff6ff; color:#1d4ed8; border-color:#bfdbfe;}
+.voice-status.error{background:#fef2f2; color:#991b1b; border-color:#fecaca;}
+
+.gender-warning{
+  background:#fff7ed; border:2px solid #fdba74; border-radius:14px;
+  padding:11px 13px; margin-bottom:10px; font-size:12px; color:#7c2d12;
+  line-height:1.5; font-weight:700;
+}
+.gender-warning b{color:#9a3412;}
+
+.welcome-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin-top:8px;}
+.wcard{background:#fff; border-radius:18px; padding:14px; box-shadow:var(--shadow-sm); transition:transform .18s ease, box-shadow .18s ease; cursor:pointer; border:0; text-align:left; font-family:inherit;}
+.wcard:hover{transform:translateY(-3px); box-shadow:0 14px 32px rgba(109,40,217,.18);}
+.wcard .t{font-weight:800; font-size:13.5px; color:#6d28d9; line-height:1.3;}
+.wcard .d{font-size:11.5px; color:#6b7280; margin-top:4px; font-weight:600;}
+
+.word-row{background:#fff; border-radius:18px; padding:12px 14px; margin-bottom:10px; box-shadow:var(--shadow-sm); transition:transform .16s ease, box-shadow .16s ease; cursor:pointer;}
+.word-row:hover{transform:translateY(-2px); box-shadow:0 12px 28px rgba(109,40,217,.16);}
+.wr-top{display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+.num{display:inline-block; min-width:22px; height:22px; line-height:22px; text-align:center; border-radius:999px; font-size:11.5px; font-weight:800; color:#fff; background:linear-gradient(135deg,#6d28d9,#8b5cf6); padding:0 5px; flex:0 0 auto;}
+.en{font-weight:800; font-size:21px; color:#111; text-align:left; direction:ltr;}
+.en .red{color:var(--red); font-weight:800;}
+.pos{font-size:10.5px; font-weight:800; text-transform:uppercase; letter-spacing:.5px; background:#ede9fe; color:#6d28d9; border-radius:999px; padding:3px 8px; margin-left:6px; vertical-align:middle;}
+.dot{color:#c4b5fd; font-weight:800; font-size:18px; flex:0 0 auto;}
+.ar{margin-left:auto; font-weight:800; font-size:19px; color:var(--ar); direction:rtl; text-align:right; font-family:"Noto Naskh Arabic","Segoe UI",Tahoma,Arial,sans-serif;}
+.def{font-size:13.5px; color:#5b5570; line-height:1.5; margin-top:6px; font-style:italic; text-align:left; direction:ltr; padding:5px 10px; background:#faf8ff; border-left:3px solid #c4b5fd; border-radius:0 10px 10px 0;}
+.sent{font-size:14.5px; color:#2b2b40; line-height:1.55; margin-top:6px; text-align:left; direction:ltr; font-weight:400;}
+.sent .hl{color:var(--red); font-weight:800;}
+.sent + .sent{margin-top:4px;}
+
+.toolbar{display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 18px;}
+.btn{border:0; cursor:pointer; border-radius:999px; font-family:inherit; font-weight:800; font-size:13px; padding:10px 16px; line-height:1; transition:transform .15s ease, box-shadow .15s ease;}
+.btn:hover{transform:translateY(-2px);}
+.btn.primary{background:linear-gradient(135deg,#6d28d9,#8b5cf6); color:#fff; box-shadow:0 6px 18px rgba(109,40,217,.32);}
+.btn.amber{background:linear-gradient(135deg,#f59e0b,#fbbf24); color:#3b2600; box-shadow:0 6px 18px rgba(245,158,11,.35);}
+.btn.green{background:linear-gradient(135deg,#059669,#10b981); color:#fff; box-shadow:0 6px 18px rgba(16,185,129,.32);}
+.btn.ghost{background:#fff; color:#6d28d9; box-shadow:var(--shadow-sm);}
+
+.pagenav{display:flex; justify-content:space-between; gap:10px; margin:26px 0 10px;}
+.navbtn{border:0; cursor:pointer; font-family:inherit; font-weight:800; font-size:13.5px; padding:12px 18px; border-radius:16px; color:#fff; background:linear-gradient(135deg,#6d28d9,#8b5cf6); box-shadow:0 6px 18px rgba(109,40,217,.28); transition:transform .15s ease;}
+.navbtn:hover{transform:translateY(-2px);}
+.navbtn[disabled]{opacity:.35; cursor:default; transform:none;}
+
+.quiz{background:#fff; border-radius:22px; padding:16px; margin-top:22px; box-shadow:var(--shadow-sm); border:2px dashed #e9e3ff;}
+.quiz-head{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:12px;}
+.quiz-head h3{margin:0; font-size:16px; font-weight:800; color:#6d28d9; flex:1 1 auto;}
+.score-pill{background:linear-gradient(135deg,#6d28d9,#8b5cf6); color:#fff; font-weight:800; font-size:12px; padding:6px 13px; border-radius:999px;}
+.quiz-actions{margin-top:12px;}
+.q{background:#faf8ff; border-radius:16px; padding:13px; margin-bottom:11px;}
+.q-stem{font-size:14px; line-height:1.55; color:#2b2b40; margin-bottom:9px;}
+.q-stem i{color:#6d28d9; font-style:normal; font-weight:700;}
+.q-stem .blank{color:var(--red); font-weight:800; letter-spacing:1px;}
+.q-opts{display:grid; grid-template-columns:1fr 1fr; gap:7px;}
+.opt{border:2px solid #e9e3ff; background:#fff; border-radius:13px; cursor:pointer; font-family:inherit; font-size:13.5px; font-weight:700; color:#2b2b40; padding:9px 10px; text-align:left; transition:all .15s ease;}
+.opt:hover{border-color:#8b5cf6; transform:translateY(-1px);}
+.opt.correct{background:linear-gradient(135deg,#059669,#10b981); color:#fff; border-color:#10b981;}
+.opt.wrong{background:linear-gradient(135deg,#ef4444,#f87171); color:#fff; border-color:#ef4444;}
+.opt[disabled]{cursor:default; transform:none;}
+.fb{margin-top:8px; font-size:13px; font-weight:800;}
+.fb.ok{color:var(--ok);}
+.fb.no{color:var(--bad);}
+
+#voicePanel{position:fixed; inset:0; z-index:85; background:rgba(43,25,80,.45); backdrop-filter:blur(3px);}
+.vp-inner{position:absolute; top:0; right:0; bottom:0; width:min(92vw,460px); background:#fff; overflow-y:auto; padding:calc(14px + env(safe-area-inset-top)) 14px calc(24px + env(safe-area-inset-bottom)) 14px; box-shadow:-8px 0 34px rgba(60,20,120,.3); animation:slideInR .22s cubic-bezier(.2,.8,.3,1);}
+@keyframes slideInR{from{transform:translateX(100%)}to{transform:translateX(0)}}
+.vp-head{display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;}
+.vp-head h2{margin:0; font-size:17px; font-weight:800; color:#6d28d9;}
+
+.current-spk{
+  background:linear-gradient(135deg,#6d28d9,#8b5cf6); color:#fff;
+  border-radius:16px; padding:12px 14px; margin-bottom:12px;
+  box-shadow:0 8px 22px rgba(109,40,217,.35);
+}
+.current-spk .lbl{font-size:10px; font-weight:800; letter-spacing:1px; text-transform:uppercase; opacity:.85;}
+.current-spk .nm{font-size:18px; font-weight:800; margin-top:3px;}
+.current-spk .ds{font-size:11.5px; opacity:.92; margin-top:3px; font-weight:600;}
+
+.spk{background:#faf8ff; border:2px solid transparent; border-radius:16px; padding:14px; margin-bottom:11px; cursor:pointer; transition:transform .15s ease, border-color .15s ease, box-shadow .15s ease;}
+.spk:hover{transform:translateY(-2px); box-shadow:var(--shadow-sm);}
+.spk.sel{border-color:#6d28d9; background:#f3efff; box-shadow:0 0 0 3px rgba(109,40,217,.15);}
+.spk-top{display:flex; align-items:center; gap:8px;}
+.spk-name{font-weight:800; font-size:17px; color:#2b2b40; flex:1 1 auto;}
+.spk-name .flag{font-size:14px; margin-right:4px;}
+.badge{font-size:9.5px; font-weight:800; letter-spacing:.6px; padding:3px 7px; border-radius:999px; background:#e0e7ff; color:#3730a3;}
+.badge.natural{background:linear-gradient(135deg,#059669,#10b981); color:#fff;}
+.badge.premium{background:linear-gradient(135deg,#6d28d9,#8b5cf6); color:#fff;}
+.badge.standard{background:#ede9fe; color:#6d28d9;}
+.badge.offline{background:linear-gradient(135deg,#0e7490,#06b6d4); color:#fff;}
+.badge.male{background:linear-gradient(135deg,#1e3a8a,#3b82f6); color:#fff;}
+.badge.female{background:linear-gradient(135deg,#be185d,#ec4899); color:#fff;}
+.badge.shifted{background:linear-gradient(135deg,#b45309,#f59e0b); color:#fff;}
+.play{border:0; cursor:pointer; width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg,#6d28d9,#8b5cf6); color:#fff; font-size:15px; flex:0 0 auto; box-shadow:0 4px 12px rgba(109,40,217,.35);}
+.play:active{transform:scale(.94);}
+.spk-desc{font-size:12px; color:#6b7280; margin-top:6px; font-weight:600;}
+.pills{display:flex; gap:6px; margin-top:8px; flex-wrap:wrap;}
+.tpill{font-size:10.5px; font-weight:800; padding:3px 9px; border-radius:999px; color:#fff;}
+.tpill.deep{background:linear-gradient(135deg,#1e3a8a,#3b82f6);}
+.tpill.high{background:linear-gradient(135deg,#db2777,#f472b6);}
+.tpill.nat{background:linear-gradient(135deg,#0891b2,#22d3ee);}
+.rate-box{background:#faf8ff; border-radius:16px; padding:12px; margin:12px 0;}
+.rate-box label{font-size:12.5px; font-weight:800; color:#6d28d9; display:block; margin-bottom:8px;}
+input[type=range]{width:100%; accent-color:#6d28d9;}
+
+.speech-help{
+  background:#fef2f2; border:2px solid #fecaca; border-radius:14px;
+  padding:12px 14px; margin:10px 0; font-size:12.5px; color:#7f1d1d;
+  line-height:1.55; font-weight:600;
+}
+.speech-help b{color:#991b1b; display:block; margin-bottom:6px; font-size:13px;}
+.speech-help ol{margin:6px 0 0 18px; padding:0;}
+.speech-help li{margin:3px 0;}
+
+#openHelp{
+  position:fixed; inset:0; z-index:95; background:rgba(43,25,80,.6);
+  backdrop-filter:blur(4px); display:flex; align-items:center; justify-content:center;
+  padding:20px; animation:fadeIn .18s ease;
+}
+.oh-card{
+  background:#fff; border-radius:22px; padding:22px 20px; max-width:440px; width:100%;
+  box-shadow:0 24px 60px rgba(0,0,0,.4);
+  max-height:90vh; overflow-y:auto;
+}
+.oh-card h2{margin:0 0 8px 0; font-size:19px; color:#6d28d9; font-weight:800;}
+.oh-card .sub{font-size:13px; color:#6b7280; margin-bottom:14px; font-weight:600; line-height:1.5;}
+.oh-step{
+  display:flex; gap:12px; padding:12px 0;
+  border-bottom:1px solid #f0edff; font-size:13.5px; color:#2b2b40; line-height:1.55;
+  font-weight:600;
+}
+.oh-step:last-of-type{border-bottom:0;}
+.oh-num{
+  flex:0 0 auto; width:26px; height:26px; border-radius:50%;
+  background:linear-gradient(135deg,#6d28d9,#8b5cf6); color:#fff;
+  font-weight:800; font-size:13px; display:flex; align-items:center; justify-content:center;
+}
+.oh-actions{display:flex; gap:8px; margin-top:16px;}
+.oh-actions .btn{flex:1;}
+
+#vis{position:fixed; left:0; right:0; bottom:0; z-index:70; background:linear-gradient(135deg,rgba(109,40,217,.96),rgba(139,92,246,.96)); color:#fff; padding:9px 14px calc(9px + env(safe-area-inset-bottom)) 14px; display:flex; align-items:center; gap:12px; box-shadow:0 -6px 22px rgba(109,40,217,.35);}
+.bars{display:flex; align-items:flex-end; gap:3px; height:24px; flex:0 0 auto;}
+.bars span{width:4px; background:#fff; border-radius:3px; height:6px; animation:barA .8s ease-in-out infinite;}
+.bars span:nth-child(2){animation-delay:.1s}
+.bars span:nth-child(3){animation-delay:.2s}
+.bars span:nth-child(4){animation-delay:.3s}
+.bars span:nth-child(5){animation-delay:.4s}
+.bars span:nth-child(6){animation-delay:.5s}
+.bars span:nth-child(7){animation-delay:.6s}
+@keyframes barA{0%,100%{height:5px}50%{height:24px}}
+#nowWord{font-size:13px; font-weight:800; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+#stopFab{position:fixed; right:14px; bottom:calc(58px + env(safe-area-inset-bottom)); z-index:71; width:52px; height:52px; border-radius:50%; border:0; cursor:pointer; background:linear-gradient(135deg,#e11d48,#f43f5e); color:#fff; font-size:20px; box-shadow:0 8px 24px rgba(225,29,72,.45);}
+#toast{position:fixed; left:50%; transform:translateX(-50%); bottom:calc(90px + env(safe-area-inset-bottom)); z-index:90; background:#2b2b40; color:#fff; font-size:13px; font-weight:700; padding:11px 18px; border-radius:999px; box-shadow:0 8px 24px rgba(0,0,0,.28); animation:fadeUp .2s ease; max-width:90vw; text-align:center;}
+
+:focus-visible{outline:3px solid var(--amber); outline-offset:2px; border-radius:10px;}
+
+@media (max-width:560px){
+  .page-header h1{font-size:22px;}
+  .page-header{padding:15px 14px; border-radius:18px;}
+  .en{font-size:18px;}
+  .ar{font-size:16.5px;}
+  .sent{font-size:13.5px;}
+  .def{font-size:12.5px;}
+  .welcome-card h1{font-size:23px;}
+  .welcome-card{padding:22px 15px;}
+  .q-opts{grid-template-columns:1fr;}
+  .num{min-width:20px; height:20px; line-height:20px; font-size:10.5px;}
+  #brand .b1{font-size:12.5px;}
+  #brand .b2{font-size:9.5px;}
+  .pill-btn{font-size:10.5px; padding:6px 9px;}
+  main{padding:10px 10px 34px;}
+  .toolbar .btn{font-size:12px; padding:9px 13px;}
+  .speech-status-card{padding:12px 13px; gap:10px;}
+  .ss-icon{font-size:22px;}
+  .ss-title{font-size:12.5px;}
+  .ss-desc{font-size:11px;}
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important;}
+  #mesh{animation:none;}
+}
+@media print{
+  #topbar,#menuPanel,#voicePanel,#vis,#stopFab,#offlineBanner,.toolbar,.quiz-actions,.pagenav,.no-print,.settings-card,.speech-status-card,#inAppBanner,#openHelp{display:none !important;}
+  body{background:#fff; padding:0;}
+  #mesh{display:none;}
+  main{max-width:100%; padding:0;}
+  .page{display:block !important; page-break-after:always;}
+  .word-row,.quiz{box-shadow:none; border:1px solid #ddd;}
+  .q-opts{display:none;}
+}
+</style>
+</head>
+<body>
+
+<div id="mesh"></div>
+
+<div id="inAppBanner" class="hidden">
+  <div class="banner-text" id="bannerText">Open in your real browser for full voice support.</div>
+  <button class="banner-btn" id="bannerOpenBtn">Open</button>
+  <button class="banner-close" id="bannerCloseBtn" aria-label="Dismiss">✕</button>
+</div>
+
+<header id="topbar">
+  <button id="menuBtn" class="icon-btn" aria-label="Open navigation ladder">☰</button>
+  <div id="brand">
+    <div class="b1">Comprehensive Vocabulary</div>
+    <div class="b2">Egyptian Baccalaureate English 2nd Year · Mr. Sherif Gouda</div>
+  </div>
+  <div class="top-right">
+    <button id="installBtn" class="pill-btn green hidden">📲 Install</button>
+    <span id="progressPill" class="pill-btn ghost">0 / 0</span>
+    <button id="voiceBtn" class="icon-btn" aria-label="Voice settings">🎙️<span id="speechDot"></span></button>
+  </div>
+</header>
+
+<div id="offlineBanner" class="hidden">⚠️ You are offline — the workbook still works.</div>
+
+<main id="pages"></main>
+
+<nav id="menuPanel" class="hidden" aria-label="Navigation ladder">
+  <div class="menu-inner" id="menuInner"></div>
+</nav>
+
+<div id="voicePanel" class="hidden">
+  <div class="vp-inner">
+    <div class="vp-head">
+      <h2>🎙️ Choose Your Voice</h2>
+      <button class="icon-btn" id="vpClose" style="background:#ede9fe;color:#6d28d9" aria-label="Close">✕</button>
+    </div>
+    <div class="current-spk" id="currentSpk">
+      <div class="lbl">Current voice</div>
+      <div class="nm" id="curName">—</div>
+      <div class="ds" id="curDesc">—</div>
+    </div>
+    <div id="voiceStatus" class="voice-status loading">🔄 Checking speech…</div>
+    <div id="genderWarning" class="gender-warning hidden"></div>
+    <div id="voiceHelpBox" class="speech-help hidden"></div>
+    <p style="font-size:12px;color:#6b7280;font-weight:600;margin:0 0 10px">
+      Tap either card to hear that voice and use it everywhere. Male sounds like a man, female sounds like a woman.
+    </p>
+    <div id="spkList"></div>
+    <div class="rate-box">
+      <label for="rateSlider">Speed adjustment: <span id="rateVal">1.00×</span></label>
+      <input type="range" id="rateSlider" min="0.85" max="1.15" step="0.01" value="1">
+    </div>
+    <button class="btn primary" id="retrySpeechBtn" style="width:100%;margin-top:8px">🔄 Retry speech detection</button>
+  </div>
+</div>
+
+<div id="vis" class="hidden">
+  <div class="bars"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div id="nowWord">Speaking…</div>
+</div>
+<button id="stopFab" class="hidden" aria-label="Stop speaking">⏹</button>
+<div id="toast" class="hidden"></div>
+
+<script>
+/* ==============================================================
+   DATA
+   ============================================================== */
+const UNITS = [
+{ id:'u1', title:'UNIT 1: LIVING WELL IN A COMPLEX WORLD',
+ sections:[
+ {id:'u1c1',title:'Category 1: Well-being & Health',kind:'vocab',items:[
+  ['well-being','الرفاهية / العافية','A state of being comfortable, healthy, and happy','Maintaining physical health and mental balance is essential for achieving overall well-being.'],
+  ['sedentary','قليل الحركة / خامل','Involving little physical movement','Doctors recommend regular exercise to counter the effects of a sedentary routine.'],
+  ['mindfulness','اليقظة الذهنية','Paying careful attention to the present moment','Mindfulness involves paying deliberate attention to the present moment.'],
+  ['nutrition','التغذية','The process of getting the food necessary for health','A balanced diet is the foundation of physical and mental well-being, according to nutrition experts.'],
+  ['nutritionist','أخصائي تغذية','A health expert who gives advice on diet','A nutritionist advises teenagers to consume a varied range of fruits and vegetables.'],
+  ['balanced','متوازن','Including different things in equal or correct amounts','Health experts recommend combining a balanced lifestyle with physical activity.'],
+  ['endorphins','الإندورفين','Chemicals in the brain that reduce stress and boost mood','Physical activity causes the release of endorphins, which reduce feelings of stress.'],
+  ['cortisol','الكورتيزول','A stress hormone','Even thirty minutes of creative engagement can reduce levels of the stress hormone cortisol.'],
+  ['immune system','جهاز المناعة',"The body's system that fights disease",'Eating fresh vegetables strengthens the immune system.'],
+  ['obesity','السمنة','The condition of being very overweight','A sedentary lifestyle can lead to obesity and other health problems.']
+ ]},
+ {id:'u1c2',title:'Category 2: Social Media & Media Literacy',kind:'vocab',items:[
+  ['curated','مُنتقى / مُختار بعناية','Carefully selected and organized','A lifestyle account shows only carefully selected achievements; it is best described as curated.'],
+  ['social comparison','المقارنة الاجتماعية','Evaluating yourself by comparing yourself to others',"Comparing ordinary life with influencers' best moments is an example of social comparison."],
+  ['highlight-reel effect','تأثير أفضل اللحظات','The tendency to post only the best moments online','The highlight-reel effect creates a false image of reality.'],
+  ['bias','تحيز','Language that strongly favors one side','Some posts contain one-sidedness, using language that strongly supports one point of view, which shows bias.'],
+  ['rhetorical question','سؤال بلاغي','A question asked for effect rather than an answer','"Can any teenager realistically maintain this routine every day?" is a rhetorical question.'],
+  ['intensifier','كلمة توكيد','A word that makes an opinion sound stronger','Writers may use an intensifier, such as "extremely," to make an opinion sound stronger.'],
+  ['neutral language','لغة محايدة','Balanced, objective language free from bias','Neutral language is balanced, objective and free from bias.'],
+  ['hedging','التحوط / لغة التحفظ','Using words that show uncertainty or caution',"Research indicates that excessive social media use may negatively affect some teenagers' self-esteem."],
+  ['absolute language','لغة مطلقة','Statements with full confidence and no qualification','Absolute words like "always," "every," and "never" are examples of absolute language.'],
+  ['media literacy','الثقافة الإعلامية','The ability to critically read and evaluate media content','Media literacy is an essential skill for protecting mental health in the digital age.']
+ ]},
+ {id:'u1c3',title:'Category 3: Responsibility & Agency',kind:'vocab',items:[
+  ['agency','الفاعلية / القدرة على التصرف','The power to make choices and take independent action','Every individual possesses the agency to choose and act.'],
+  ['self-efficacy','الكفاءة الذاتية',"Belief in one's own capacity to succeed",'Individuals who scored highly on self-efficacy measures were more likely to maintain healthy behaviors.'],
+  ['structural barriers','الحواجز الهيكلية','Obstacles in the environment that limit genuine choice','A neighborhood with no safe parks or affordable sports facilities creates structural barriers.'],
+  ['locus of control','مركز التحكم',"A person's belief about whether they control their own life",'Psychologists refer to having an "internal locus of control" as believing one\'s own actions determine outcomes.'],
+  ['resilience','المرونة / الصلابة','The ability to recover and adapt in the face of difficulty','Taking ownership builds confidence, resilience, and a sense of purpose.'],
+  ['nudge','التنبيه / الدفع اللطيف','A gentle push towards a certain behavior without force','Economist Richard Thaler\'s concept of the "nudge" captures the idea of small changes that shift behavior.'],
+  ['disempowering','مُضعِف / مُثبِّط','Making someone feel less capable or in control',"Framing health as someone else's problem can be disempowering."],
+  ['personal responsibility','المسؤولية الشخصية',"Taking ownership of one's own choices and actions",'Many health professionals argue that personal responsibility lies at the heart of a well-lived life.'],
+  ['shared responsibility','المسؤولية المشتركة','Responsibility that belongs to both individuals and society','A third perspective argues that responsibility is shared among governments, schools, families, and communities.']
+ ]},
+ {id:'u1c4',title:'Category 4: Habits & Lifestyle',kind:'vocab',items:[
+  ['habit','عادة','Something you do regularly','Healthy habits shape not only our physical health but also our identity.'],
+  ['routine','روتين','A regular way of doing things','Setting up a regular bedtime routine has been shown to improve sleep quality.'],
+  ['lifestyle','نمط الحياة','The way a person lives','How we choose to live — our daily habits, diet, and sleep — shapes our lifestyle.'],
+  ['consumption','استهلاك','The act of using or buying things','Mindful consumption includes being aware of food, media, products, and information we take in.'],
+  ['screen time','وقت الشاشة','Time spent using devices with screens','Excessive screen time can reduce attention spans and increase feelings of isolation.'],
+  ['processed food','الأطعمة المصنعة','Food changed from its natural state','Nutritionists advise limiting intake of processed food, too much sugar, and high-caffeine drinks.'],
+  ['whole grains','الحبوب الكاملة','Grains that contain the entire grain kernel','A balanced diet includes fruits, vegetables, whole grains, lean proteins, and healthy fats.'],
+  ['lean proteins','البروتينات الخالية من الدهون','Proteins with low fat content','Teenagers should consume a varied range of fruits, vegetables, whole grains, lean proteins, and healthy fats.']
+ ]},
+ {id:'u1p2',title:'PART 2: WORD DERIVATIVES (Word Families)',kind:'deriv',items:[
+  ['signify','Verb','يدل على / يعني',['These results signify a major improvement in student fitness.','Hieroglyphics signify meaning through symbols.','Higher prices do not always signify better quality.']],
+  ['significant','Adjective','مهم / ذو دلالة',["Regular exercise has a significant effect on teenagers' mental health.",'The discovery was significant for historians.','There has been a significant increase in food waste.']],
+  ['significance','Noun','أهمية',['The significance of sleep for brain development is often underestimated.','The significance of the Rosetta Stone cannot be overstated.','The significance of mindful consumption is often underestimated.']],
+  ['significantly','Adverb','بشكل ملحوظ',['Exercise can significantly improve mood.','The discovery significantly changed our understanding of history.','Food waste has significantly increased in recent years.']],
+  ['participate','Verb','يشارك',['Schools should encourage every student to participate in physical activity.','Young people should participate in environmental campaigns.']],
+  ['participation','Noun','مشاركة',['Student participation in sports has increased this year.','Community participation is essential for environmental projects.']],
+  ['participant','Noun','مشارك',['Each participant in the study completed a health questionnaire.','Every participant received a certificate after the race.']],
+  ['compete','Verb','يتنافس',['Athletes compete at the highest level in the Olympic Games.','Young athletes compete in school tournaments every year.']],
+  ['competitive','Adjective','تنافسي',['The final match was highly competitive until the final whistle.']],
+  ['competition','Noun','منافسة',['There is strong competition between the two teams.','Competition can motivate some people but discourage others.']],
+  ['competitively','Adverb','بشكل تنافسي',['The teams played competitively throughout the match.']],
+  ['competitor','Noun','منافس',['Each competitor trained for months before the race.','Each competitor showed great determination.']],
+  ['resist','Verb','يقاوم',['It was difficult to resist the offer because the price was very low.']],
+  ['resistance','Noun','مقاومة',['Consumers need to build resistance to sales pressure.']],
+  ['resistant','Adjective','مقاوم',['Some people are more resistant to advertising than others.']],
+  ['resilient','Adjective','مرن / قادر على التعافي',["Supportive relationships can strengthen a young person's resilient nature."]],
+  ['resilience','Noun','مرونة',['Facing difficulties can help people develop resilience.']],
+  ['access','Verb','يصل إلى / يدخل',['Students can access the library database from home.','Students can access online fitness programs from home.']],
+  ['accessible','Adjective','سهل الوصول',['The new ramp improved the accessible nature of the community sports center.','Schools should make physical activities more accessible.']],
+  ['accessibility','Noun','إمكانية الوصول',['Accessibility to sports facilities is important for all students.','The new signs improved accessibility for visitors.']],
+  ['accessibly','Adverb','بشكل سهل الوصول',['The museum was designed accessibly for visitors with disabilities.']],
+  ['fulfil','Verb','يُحقّق / يفي بـ',['Good planning can fulfil the needs of students and teachers.',"Creative activities can fulfil a teenager's need for self-expression."]],
+  ['fulfilling','Adjective','مُرضٍ / مُحقق',['A school art club can be highly fulfilling when students develop skills and confidence.','Leisure time is most valuable when it feels fulfilling.']],
+  ['fulfilment','Noun','تحقيق / إرضاء',['Creative activities provide a sense of fulfilment.']],
+  ['empower','Verb','يُمكّن',['Clear information can empower students to make more independent health choices.']],
+  ['empowerment','Noun','تمكين',['Empowerment helps teenagers take control of their well-being.']],
+  ['empowered','Adjective','مُمكَّن',['Empowered students are more likely to make healthy decisions.']],
+  ['belong','Verb','ينتمي',['Many young people want to belong to a group through the clothes they wear.']],
+  ['belonging','Noun','انتماء',["Community support can increase young people's sense of belonging and participation.",'Brands sell the feeling of belonging.']],
+  ['accurate','Adjective','دقيق',['Historical researchers should provide accurate information.']],
+  ['accuracy','Noun','دقة',['Historical researchers should value accuracy when presenting evidence.']],
+  ['accurately','Adverb','بدقة',['The events were accurately recorded in the official report.','The costs were accurately calculated before the sale.']],
+  ['sustain','Verb','يحافظ / يستدام',['It is difficult to sustain this level of energy use.']],
+  ['sustainable','Adjective','مستدام',['We need sustainable solutions to environmental problems.']],
+  ['sustainability','Noun','استدامة',['Investment in clean transport may improve environmental sustainability over time.']],
+  ['sustainably','Adverb','بشكل مستدام',['The city is developing sustainably to protect future generations.','We should shop sustainably to protect the planet.']],
+  ['aware','Adjective','واعٍ',['Young people are increasingly aware of climate issues.']],
+  ['awareness','Noun','وعي',['Public campaigns can raise environmental awareness without removing individual choice.']],
+  ['mind','Verb','يمانع / يهتم',['Do you mind if I open the window?']],
+  ['mindful','Adjective','واعٍ / متيقظ',['A mindful student thinks before sharing photos online.']],
+  ['mindfulness','Noun','اليقظة الذهنية',['Mindfulness involves paying deliberate attention to the present moment.']],
+  ['mindfully','Adverb','بوعي',['She mindfully chose her words before speaking.','He mindfully limited his screen time to one hour per day.']]
+ ]}
+]},
+{ id:'u2', title:'UNIT 2: LEISURE TIME',
+ sections:[
+ {id:'u2c1',title:'Category 1: Screen Time & Digital Leisure',kind:'vocab',items:[
+  ['screen time','وقت الشاشة','Time spent using devices with screens','Research consistently shows that taking regular breaks from screen time can improve mood and sleep quality.'],
+  ['addictive','مُسبب للإدمان','Causing a very strong need or desire to keep doing something','A game that creates a very strong need to continue playing may be described as addictive.'],
+  ['boundaries','حدود','Limits or rules that show what is acceptable','Leila has decided not to use a phone during meals or before bed; these rules are screen-time boundaries.'],
+  ['scroll','يتصفح','To move through content on a screen',"Don't scroll for hours before sleeping; it may affect your rest."],
+  ['infinite scroll','التمرير اللانهائي','A feature that keeps users scrolling endlessly','Features like infinite scroll and autoplay were not created by accident.'],
+  ['autoplay','التشغيل التلقائي','A feature that automatically plays the next video','Autoplay is designed to keep users online longer.'],
+  ['notification','إشعار','A message alerting you to something','Simply receiving a notification — even if you do not open it — can make it harder to focus.'],
+  ['digital literacy','الثقافة الرقمية','The ability to use and understand digital technology','Digital literacy education helps users understand how apps work.'],
+  ['mindful','واعٍ / متيقظ','Paying conscious attention to the present moment','A mindful student thinks before sharing photos online.'],
+  ['withdraw','ينسحب / يتوقف','To take or move out or back; to remove','When a digital activity begins to affect sleep, it may be sensible to withdraw from it for a while.']
+ ]},
+ {id:'u2c2',title:'Category 2: Creative Arts',kind:'vocab',items:[
+  ['creative arts','الفنون الإبداعية','Activities like drawing, music, and writing','Creative arts offer a different and more meaningful experience than passive screen time.'],
+  ['flow','حالة التدفق','A state of complete absorption in a meaningful task','Psychologists call the state of complete absorption in a task "flow."'],
+  ['rehearsal','بروفة / تدريب','A practice session before a performance','A rehearsal is a practice session held before a public performance.'],
+  ['authentic','أصيل / حقيقي','Real and genuine, not false or copied','The restaurant is known for its authentic Egyptian dishes.'],
+  ['cognitive flexibility','المرونة المعرفية','The ability to adapt and try different solutions','Creative activities improve cognitive flexibility and help people adapt to new situations.'],
+  ['engagement','مشاركة / انخراط','The act of being involved or interested','Creative engagement can measurably reduce levels of the stress hormone cortisol.'],
+  ['resilience','مرونة','The ability to recover and adapt','Research shows that young people who engage in creative activities show greater emotional resilience.'],
+  ['collaboration','تعاون','Working together toward a shared goal','Collaboration is another strong benefit of creative arts.'],
+  ['arena','ساحة / مجال','A place or situation where an activity happens','Art provides a safe, non-judgmental arena for self-exploration.']
+ ]},
+ {id:'u2c3',title:'Category 3: Sport & Physical Activity',kind:'vocab',items:[
+  ['physical activity','نشاط بدني','Any bodily movement that requires energy','Health experts recommend at least 60 minutes of moderate-to-hard physical activity every day.'],
+  ['cardiovascular fitness','اللياقة القلبية الوعائية','The ability of the heart and lungs to supply oxygen','Sport builds cardiovascular fitness, strength, coordination, and endurance.'],
+  ['endurance','تحمل','The ability to sustain physical effort','Sport builds cardiovascular fitness, strength, coordination, and endurance.'],
+  ['self-esteem','تقدير الذات',"Confidence in one's own worth",'Team sports help young people develop self-esteem and emotional regulation.'],
+  ['emotional regulation','التنظيم العاطفي','The ability to manage and respond to emotions','Sport teaches emotional regulation and social competence.'],
+  ['perseverance','مثابرة','Continued effort despite difficulties','Sport teaches life skills like losing gracefully and perseverance.'],
+  ['access','وصول / إمكانية الوصول','The opportunity or right to use something','Access to sport is not equal for everyone.'],
+  ['participation','مشاركة','The act of taking part in something','Enjoyment is the strongest predictor of long-term participation in sport.']
+ ]},
+ {id:'u2c4',title:'Category 4: Outdoor & Adventure',kind:'vocab',items:[
+  ['wore on','مر / تقدم','Passed gradually (used of time)','As the morning wore on, the heat became increasingly difficult to bear.'],
+  ['shimmered','لمع / تلألأ','Shone with a soft, slightly moving light','The Nile shimmered softly beside us.'],
+  ['pedal stroke','دفعة دواسة','A single push of a bicycle pedal','With each pedal stroke, he pushed the bicycle farther up the steep road.'],
+  ['sense of achievement','شعور بالإنجاز','A strong, proud feeling gained from completing something difficult','Finishing the race gave her an enormous sense of achievement.'],
+  ['struggled to keep up','كافح للاستمرار','Had difficulty moving at the same speed as someone else','I struggled to keep up with my friend, who had more experience.'],
+  ['insisted','أصر','Demanded firmly and repeatedly','My friend insisted that I join him on a cycling trip.'],
+  ['exhausted','منهك','Extremely tired','I was exhausted in a way I had never quite experienced before.']
+ ]},
+ {id:'u2p2',title:'PART 2: WORD DERIVATIVES',kind:'deriv',items:[
+  ['addict','Noun','مدمن',['A social media addict may struggle to focus on daily tasks.']],
+  ['addict','Verb','يُدمن',['Some teenagers addict themselves to video games without realizing the harm.']],
+  ['addictive','Adjective','مُسبب للإدمان',['A game that creates a strong need to keep playing may be addictive.']],
+  ['addiction','Noun','إدمان',['Social media addiction can affect mental health.']],
+  ['enjoy','Verb','يستمتع',['Young people enjoy sports more when they choose them freely.']],
+  ['enjoyable','Adjective','ممتع',['Young people find sport more enjoyable when they choose it freely.']],
+  ['enjoyment','Noun','استمتاع',['Enjoyment is important for long-term participation.']],
+  ['enjoyably','Adverb','بشكل ممتع',['The afternoon was spent enjoyably cycling along the Nile.']],
+  ['act','Verb','يتصرف / يعمل',['Teenagers should act responsibly when using social media.']],
+  ['active','Adjective','نشط',['The students participated in the active sports competition.']],
+  ['actively','Adverb','بنشاط',['The students participated actively in the school sports competition.']],
+  ['activity','Noun','نشاط',["Physical activity is essential for teenagers' health."]],
+  ['action','Noun','عمل / إجراء',['Taking small actions can lead to big changes in well-being.']]
+ ]}
+]},
+{ id:'u3', title:'UNIT 3: ECHOES OF THE PAST',
+ sections:[
+ {id:'u3c1',title:'Category 1: Historical Sites & Memory',kind:'vocab',items:[
+  ['site of memory','موقع الذاكرة','A place connected with important events, experiences, or individuals','A battlefield, an ancient street, or even an ordinary house can become a site of memory.'],
+  ['monument','نصب تذكاري','A statue or building that honours a person or event','Ancient monuments play an important role in preserving the identity of nations.'],
+  ['heritage','تراث','Traditions, achievements, and beliefs passed down through generations','Exploring historical sites allows visitors to connect with their heritage.'],
+  ['collective identity','الهوية الجماعية','The shared sense of belonging to a group','Sites of memory preserve collective identity.'],
+  ['accumulated','متراكم','Built up or collected over time','Karnak is a landscape of accumulated memory.'],
+  ['massive','ضخم','Extremely large in size','The Hypostyle Hall contains massive columns.'],
+  ['inscribe','ينقش','To write or carve into a surface',"The pharaoh's grand tomb was covered with detailed inscriptions."],
+  ['encode','يرمز / يشفر','To convert into signs or symbols to carry meaning','The walls were encoded with hieroglyphics.'],
+  ['devotion','تفانٍ / إخلاص','Strong love and care for someone or something',"The pharaoh's devotion to the gods was evident in the temple's design."],
+  ['ram-headed sphinx','أبو الهول برأس كبش',"An ancient Egyptian statue with a lion's body and a ram's head",'The avenue of ram-headed sphinxes leads to the temple entrance.']
+ ]},
+ {id:'u3c2',title:'Category 2: Museums & Curation',kind:'vocab',items:[
+  ['artifact','قطعة أثرية','An object made or used by humans in the past','The Grand Egyptian Museum houses more than 100,000 artifacts.'],
+  ['curator','أمين متحف','A person who selects, organizes, and explains objects in a museum','Curators must make careful decisions about which objects to display.'],
+  ['curation','التنظيم / التنسيق','The process of selecting and organizing objects','Curation creates a narrative in a museum.'],
+  ['dynasty','سلالة حاكمة','A series of rulers from the same family','The GEM takes visitors through the great dynasties of ancient Egypt.'],
+  ['conservation','حفظ / صيانة','The process of protecting and preserving things from damage','Conservation laboratories inside the museum allow experts to study and restore artifacts.'],
+  ['chronological','زمني / ترتيبي','Arranged in the order in which events happened','The Grand Staircase features statues arranged in chronological order.'],
+  ['multilingual','متعدد اللغات','Able to speak or use more than two languages','Multilingual labels make the museum accessible to international visitors.'],
+  ['accessible','سهل الوصول','Easy for people of all backgrounds to reach or understand','Interactive screens make the experience accessible to visitors of all ages.'],
+  ['remarkable','استثنائي / رائع','Very unusual or surprising in a positive way','The GEM makes a remarkable effort to represent the depth of ancient Egyptian life.'],
+  ['colossal','عملاق / ضخم','Extremely large','The Grand Staircase features 87 colossal royal statues.']
+ ]},
+ {id:'u3c3',title:'Category 3: Social Media & History',kind:'vocab',items:[
+  ['viral','منتشر بسرعة','Spreading rapidly and widely online','A single post about an Egyptian pharaoh can accumulate millions of views and go viral.'],
+  ['media literacy','الثقافة الإعلامية','The ability to critically read and evaluate media content','Media literacy is the developed habit of questioning sources and checking dates.'],
+  ['claim','ادعاء','A statement that something is true','Viral posts may contain false claims even if they are widely shared.'],
+  ['verify','يتحقق','To check or prove that something is true','Historians need time to verify the accuracy of viral posts.'],
+  ['significant','مهم / ذو دلالة','Important or noticeable','The consequences for our understanding of history are significant.'],
+  ['prioritize','يعطي الأولوية','To treat something as more important','Social media platforms prioritize engagement over accuracy.'],
+  ['selective framing','التأطير الانتقائي','Choosing which details to include or exclude to shape understanding','Selective framing can distort public understanding of history.'],
+  ['citizen journalism','صحافة المواطن','News reporting by members of the public','Citizen journalism allows ordinary people to document events.'],
+  ['digital archive','أرشيف رقمي','A collection of historical materials stored online','A digital archive can preserve verified reports for future generations.'],
+  ['hashtag','وسم','A word or phrase preceded by # used to tag content','Students added a clear hashtag to their group posts.']
+ ]},
+ {id:'u3c4',title:'Category 4: Archaeology & Discovery',kind:'vocab',items:[
+  ['excavation','تنقيب / حفر','The activity of digging to discover old objects','Workers started an excavation after buried stones were found.'],
+  ['submerged','مغمور تحت الماء','Covered or hidden under water','A submerged site near Alexandria was discovered.'],
+  ['fragile','هش','Easily damaged or broken','The papyrus is fragile and must be handled carefully.'],
+  ['documentation','توثيق','The process of recording and keeping information','Photographs, maps, and notes provide documentation of discoveries.'],
+  ['remarkable','استثنائي','Very unusual or surprising in a positive way','The discovery was remarkable and attracted global attention.'],
+  ['accuracy','دقة','The state of being correct and free from mistakes','Social media posts often lack accuracy.']
+ ]},
+ {id:'u3p2',title:'PART 2: WORD DERIVATIVES',kind:'deriv',items:[
+  ['accumulate','Verb','يتراكم',['Sand accumulated over the ancient ruins.']],
+  ['accumulated','Adjective','متراكم',['Karnak is a landscape of accumulated memory.']],
+  ['accumulation','Noun','تراكم',['The accumulation of sand covered the ruins.']],
+  ['inscribe','Verb','ينقش',["The pharaoh's name was inscribed on the wall."]],
+  ['inscribed','Adjective','منقوش',['The inscribed walls told the story of ancient battles.']],
+  ['inscription','Noun','نقش',['The inscription told the story of his reign.']],
+  ['devote','Verb','يكرس / يخصص',['The pharaoh devoted his life to building temples.']],
+  ['devoted','Adjective','مخلص',['She is devoted to her family.']],
+  ['devotion','Noun','تفانٍ',["The pharaoh's devotion to the gods was clear."]],
+  ['represent','Verb','يمثل',['The statues represent the wealth of the ancient kingdom.']],
+  ['representative','Noun','ممثل',['The museum representative spoke to visitors.']],
+  ['representation','Noun','تمثيل',["The statues are a representation of the kingdom's wealth."]],
+  ['preserve','Verb','يحافظ على',['Museums work to preserve ancient artifacts.']],
+  ['preservation','Noun','حفظ',['Museums play a role in the preservation of heritage.']],
+  ['preservative','Noun','مادة حافظة',['Preservatives are used to protect fragile objects.']],
+  ['archaeology','Noun','علم الآثار',['Archaeology helps us understand ancient civilizations.']],
+  ['archaeological','Adjective','أثري',['The archaeological museum is the largest in the world.']],
+  ['archaeologist','Noun','عالم آثار',['The archaeologist discovered a new tomb.']],
+  ['chronology','Noun','تسلسل زمني',['The chronology of events was carefully documented.']],
+  ['chronological','Adjective','زمني',['Objects are displayed in chronological order.']],
+  ['chronologically','Adverb','بشكل زمني',['The artifacts were arranged chronologically from oldest to newest.']],
+  ['conserve','Verb','يحافظ على',['Experts work to conserve fragile objects.']],
+  ['conservation','Noun','حفظ',['Conservation laboratories protect artifacts.']],
+  ['conservationist','Noun','مناصر للحفاظ على البيئة',['The conservationist worked to protect ancient sites.']],
+  ['verify','Verb','يتحقق',['Historians need time to verify the accuracy of viral posts.']],
+  ['verifiable','Adjective','قابل للتحقق',['The museum report provides verifiable evidence.']],
+  ['verification','Noun','تحقق',['The verification process took several weeks.']],
+  ['verified','Adjective','مُتحقق منه',['Only verified information should be shared online.']]
+ ]}
+]},
+{ id:'u4', title:'UNIT 4: THE POWER OF CHOICE',
+ sections:[
+ {id:'u4c1',title:'Category 1: Food Waste',kind:'vocab',items:[
+  ['leftover food','طعام متبقٍ','Food that remains after a meal and can still be eaten','Leftover food can be safely eaten if stored properly.'],
+  ['storage','تخزين','Keeping things in a safe place until needed','Poor storage can cause fresh food to go bad quickly.'],
+  ['confusion','ارتباك','The state of being unable to understand clearly','There is often confusion about dates on food packages.'],
+  ['generosity','كرم','Being kind and willing to give a lot to others','During Ramadan, families express generosity by preparing large meals for guests.'],
+  ['recommendation','توصية','An idea or suggestion for what someone should do','The report makes three recommendations to reduce food waste.'],
+  ['reduce','يقلل','To make something smaller or less','Better habits can reduce waste at home.'],
+  ['significantly','بشكل ملحوظ','In an important or noticeable way','The results can improve significantly within a few years.'],
+  ['best before','الأفضل قبل','A date indicating when taste or quality might change','"Best before" only means that the taste or quality might change; it does not mean the food is unsafe.'],
+  ['use by','يُستخدم بحلول','A date indicating when food is no longer safe to eat','The "use by" date tells you when food is no longer safe to eat.'],
+  ['food bank','بنك الطعام','A place where food is donated to those in need','Shops should give safe leftover food to food banks rather than throw it away.']
+ ]},
+ {id:'u4c2',title:'Category 2: Brands & Consumer Culture',kind:'vocab',items:[
+  ['brand','علامة تجارية',"A well-known name associated with a company's products",'A brand is much more than a logo; it is a set of feelings and ideas.'],
+  ['logo','شعار','A picture or symbol used to represent a company',"When people see the logo of their favorite brand, the brain's identity region becomes active."],
+  ['brand loyalty','الولاء للعلامة التجارية','Always choosing the same brand and not wanting to change','Understanding how brands work helps us avoid blind brand loyalty.'],
+  ['preference','تفضيل','Liking one thing more than another','Companies create our preference for their products through emotional storytelling.'],
+  ['belonging','انتماء','The feeling of being part of a group','Brands sell the feeling of belonging somewhere.'],
+  ['resist','يقاوم','To stop yourself from doing something','Understanding how brands work helps us resist blind loyalty.'],
+  ['mindful consumption','الاستهلاك الواعي','Being aware of what you buy and why','Mindful consumption can help people make better buying decisions.'],
+  ['consumer','مستهلك','A person who buys goods or services','Understanding how brands work gives us an advantage as consumers.'],
+  ['identity','هوية','Who a person is','Choosing a brand is often about saying something about who you are — your identity.']
+ ]},
+ {id:'u4c3',title:'Category 3: Digital Consumption',kind:'vocab',items:[
+  ['app','تطبيق','A software program designed for a particular function','I use a fitness app to count my steps every day.'],
+  ['scroll','يتصفح','To move through content on a screen',"Don't scroll for hours before sleeping."],
+  ['infinite scroll','التمرير اللانهائي','A feature that keeps users scrolling endlessly','Infinite scroll was designed to keep users online longer.'],
+  ['autoplay','التشغيل التلقائي','A feature that automatically plays the next video','Autoplay and infinite scroll work together to keep users engaged.'],
+  ['notification','إشعار','A message alerting you to something','Simply receiving a notification can make it harder to focus.'],
+  ['attention','انتباه','Notice or concentration','Your attention has value; apps collect data about you every minute.'],
+  ['data','بيانات','Information collected about users',"Apps collect data about users' behavior and interests."],
+  ['concentration','تركيز','The ability to focus','Notifications can damage concentration even if you do not open them.'],
+  ['digital literacy','الثقافة الرقمية','The ability to use and understand digital technology','Digital literacy education helps users understand how apps work.']
+ ]},
+ {id:'u4c4',title:'Category 4: Sales & Consumer Psychology',kind:'vocab',items:[
+  ['loss aversion','النفور من الخسارة','Avoiding loss more than gaining','Loss aversion makes people feel that not buying a discounted item means losing a benefit.'],
+  ['urgency','إلحاح','A feeling that something must be done quickly','Phrases like "Only 3 left!" create a feeling of urgency.'],
+  ['countdown clock','ساعة العد التنازلي','A timer showing how much time is left','Countdown clocks on websites force you to decide quickly.'],
+  ['impulse buying','الشراء الاندفاعي','Buying without thinking','Sales events encourage impulse buying.'],
+  ['purchase','شراء','To buy something','She purchased a jacket during the sale.'],
+  ['fall for','يقع في فخ','To be tricked into believing something','Many shoppers fall for clever sales tricks.'],
+  ['trick','خدعة','Something done to deceive people','Companies use tricks to influence our decisions.'],
+  ['scarcity','ندرة','A shortage of something','Retailers use scarcity indicators like "Only 3 left!" to create urgency.']
+ ]},
+ {id:'u4p2',title:'PART 2: WORD DERIVATIVES',kind:'deriv',items:[
+  ['loyal','Adjective','مخلص',['Good service can make customers more loyal.']],
+  ['loyalty','Noun','ولاء',['Brand loyalty can prevent consumers from trying better products.']],
+  ['loyally','Adverb','بإخلاص',['She loyally supported the same brand for years.']],
+  ['prefer','Verb','يفضل',['My brother prefers simple designs.']],
+  ['preference','Noun','تفضيل',['Companies shape our preference for their products.']],
+  ['preferable','Adjective','مفضل',['A cheaper option is preferable when quality is equal.']],
+  ['preferably','Adverb','بشكل مفضل',['Choose fresh ingredients, preferably from local markets.']],
+  ['consume','Verb','يستهلك',['Teenagers consume large amounts of digital content daily.']],
+  ['consumer','Noun','مستهلك',['Understanding how brands work gives us an advantage as consumers.']],
+  ['consumption','Noun','استهلاك',['Mindful consumption can help teenagers make free choices.']],
+  ['consuming','Adjective','مستهلك / شاغل',['Social media can be a consuming activity that takes up hours.']],
+  ['impulse','Noun','اندفاع',['Sales events encourage impulse buying.']],
+  ['impulsive','Adjective','اندفاعي',['Impulsive buying can lead to financial problems.']],
+  ['impulsively','Adverb','بشكل اندفاعي',['She impulsively bought a jacket she did not need.']]
+ ]}
+]},
+{ id:'u5', title:'UNIT 5: THE GREENHOUSE EFFECT',
+ sections:[
+ {id:'u5c1',title:'Category 1: Climate Change',kind:'vocab',items:[
+  ['greenhouse effect','تأثير الاحتباس الحراري','The trapping of heat in the atmosphere','The greenhouse effect happens when gases in the atmosphere trap heat.'],
+  ['fossil fuels','الوقود الأحفوري','Coal, oil, and natural gas','Since the Industrial Revolution, the burning of fossil fuels has released billions of tons of carbon dioxide.'],
+  ['carbon dioxide','ثاني أكسيد الكربون','A greenhouse gas released by burning fossil fuels','Burning fossil fuels releases carbon dioxide into the atmosphere.'],
+  ['emissions','انبعاثات','Gases released into the atmosphere','These emissions create the greenhouse effect.'],
+  ['biodiversity','التنوع البيولوجي','The variety of plant and animal life','Biodiversity is under serious threat from climate change.'],
+  ['acidification','تحمض','The process of becoming more acidic','Coral reefs are dying due to ocean warming and acidification.'],
+  ['bleaching','ابيضاض','The process of losing color','The Great Barrier Reef has experienced mass bleaching events.'],
+  ['extreme weather','طقس متطرف','Severe weather events','Extreme weather events are becoming more frequent and more severe.'],
+  ['drought','جفاف','A long period without rain','Droughts are occurring with greater intensity.'],
+  ['consensus','إجماع','General agreement among a group','The scientific consensus is clear: human activity is the primary driver of climate change.'],
+  ['irreversible','لا رجعة فيه','Impossible to reverse','If global temperatures rise by more than 1.5°C, the results could be disastrous and irreversible.']
+ ]},
+ {id:'u5c2',title:'Category 2: Renewable Energy',kind:'vocab',items:[
+  ['renewable energy','الطاقة المتجددة','Energy from sources that are naturally replenished','Renewable energy is transforming how the world powers itself.'],
+  ['solar','شمسي','Relating to the sun','Solar panels convert sunlight into electricity.'],
+  ['wind','رياح','Moving air used to generate power','Wind turbines harness the kinetic energy of wind.'],
+  ['hydro','مائي','Relating to water','Hydro power uses moving water to drive turbines.'],
+  ['geothermal','حراري أرضي',"Relating to the Earth's heat","Geothermal energy uses the Earth's heat to power turbines."],
+  ['photovoltaic','كهروضوئي','Converting light into electricity','Photovoltaic panels convert sunlight into electricity.'],
+  ['intermittency','التقطع','The quality of stopping and starting','Battery storage technology may solve the problem of intermittency.'],
+  ['battery storage','تخزين البطاريات','Storing energy in batteries','Battery storage technology has become important for renewable energy.'],
+  ['grid','شبكة كهرباء','A network for distributing electricity','Excess energy can be stored or sold back to the grid.'],
+  ['leapfrog','يقفز فوق','To skip a stage of development','Developing nations are increasingly leapfrogging fossil fuels for renewables.']
+ ]},
+ {id:'u5c3',title:'Category 3: Environmental Action',kind:'vocab',items:[
+  ['sustainability','استدامة','Meeting present needs without harming future generations','Sustainability is essential for protecting the planet.'],
+  ['awareness','وعي','Knowledge and understanding of an issue','The "Go Green Initiative" aims to raise awareness among citizens.'],
+  ['initiative','مبادرة','A plan or program introduced to achieve a goal','The "Go Green" initiative encourages people to reduce plastic use.'],
+  ['recycling','إعادة التدوير','Converting waste into reusable products','Recycling projects are supported by the government.'],
+  ['emissions','انبعاثات','Gases released into the atmosphere','New laws help manage emissions safely.'],
+  ['efficiency','كفاءة','The ability to perform with minimum waste','Energy efficiency in buildings is part of the Green Cities Program.'],
+  ['determination','تصميم / عزيمة','A strong will to finish a task','The conference coordinator had never seen so much determination from young Egyptians.'],
+  ['innovation','ابتكار','A new idea, method, or product','Egypt is positioned to lead environmental innovation in Africa.'],
+  ['affordable','ميسور التكلفة','Inexpensive; not costing a lot','Omar designed a low-cost solar water heater that was affordable for lower-income families.'],
+  ['volunteer','متطوع','A person who offers to do something without pay',"Farida's campaign grew to over two hundred volunteers within a year."]
+ ]},
+ {id:'u5p2',title:'PART 2: WORD DERIVATIVES',kind:'deriv',items:[
+  ['awaken','Verb','يوقظ / ينبه',['The documentary awakened public interest in climate change.']],
+  ['recycle','Verb','يعيد التدوير',['We should recycle plastic and paper.']],
+  ['recycling','Noun','إعادة التدوير',['Recycling reduces waste sent to landfills.']],
+  ['recycled','Adjective','مُعاد تدويره',['Recycled materials can be used to make new products.']],
+  ['recyclable','Adjective','قابل لإعادة التدوير',['Glass is a recyclable material.']],
+  ['emit','Verb','ينبعث / يصدر',['Factories emit harmful gases.']],
+  ['emissions','Noun','انبعاثات',['Carbon emissions must be reduced.']],
+  ['emission','Noun','انبعاث',['The emission of greenhouse gases is the main cause of climate change.']],
+  ['efficient','Adjective','فعال',['Solar panels are an efficient source of energy.']],
+  ['efficiency','Noun','كفاءة',['Energy efficiency saves money and resources.']],
+  ['efficiently','Adverb','بفعالية',['The new system uses energy more efficiently.']],
+  ['determine','Verb','يحدد / يعزم',['We must determine the best course of action.']],
+  ['determination','Noun','تصميم / عزيمة',['Her determination helped her finish the project.']],
+  ['determined','Adjective','مصمم',['She was determined to reduce her carbon footprint.']],
+  ['determinedly','Adverb','بتصميم',['He determinedly worked to protect the environment.']],
+  ['innovate','Verb','يبتكر',['Companies must innovate to create sustainable solutions.']],
+  ['innovation','Noun','ابتكار',['Egypt is positioned to lead environmental innovation.']],
+  ['innovative','Adjective','مبتكر',['Omar designed an innovative solar water heater.']],
+  ['innovatively','Adverb','بشكل مبتكر',['The project was innovatively designed to save energy.']],
+  ['afford','Verb','يستطيع تحمل التكلفة',['Many families cannot afford new solar panels.']],
+  ['affordable','Adjective','ميسور التكلفة',['The device was affordable for lower-income families.']],
+  ['affordability','Noun','القدرة على تحمل التكلفة',['The affordability of renewable energy has improved greatly.']],
+  ['affordably','Adverb','بتكلفة ميسورة',['The devices can be produced affordably.']],
+  ['extinct','Adjective','منقرض',['Many species risk becoming extinct due to climate change.']],
+  ['extinction','Noun','انقراض',['Human activity has led to the sixth mass extinction event.']],
+  ['acid','Noun','حمض',['Ocean acid levels are rising due to carbon emissions.']],
+  ['acidic','Adjective','حمضي',['The ocean is becoming more acidic.']],
+  ['acidification','Noun','تحمض',['Coral reefs are dying due to ocean warming and acidification.']],
+  ['bleach','Verb','يُبيّض / يفقد اللون',['Corals bleach when stressed by warm water.']],
+  ['bleached','Adjective','مُبيَّض',['The bleached coral reefs are a sign of environmental damage.']],
+  ['bleaching','Noun','ابيضاض',['The Great Barrier Reef has experienced mass bleaching events.']]
+ ]}
+]}
+];
+
+/* ==============================================================
+   SPEAKERS — exactly TWO voices: one male, one female
+   ============================================================== */
+const SPEAKERS = [
+ {id:'alex',
+  name:'Alex',
+  label:'Male Voice',
+  flag:'🇺🇸',
+  gender:'male',
+  accent:'US',
+  pitch:0.70,
+  rate:1.00,
+  volume:1.00,
+  desc:'Deep, clear American male voice.',
+  preview:'Hello. I am Alex. I speak American English with a deep, clear male voice.',
+  pref:['alex','david','mark','daniel','fred','george','guy','brian','ryan','christopher','eric','matthew','andrew',
+        'google us english male','google uk english male','microsoft david','microsoft mark','microsoft guy','microsoft george']},
+
+ {id:'samantha',
+  name:'Samantha',
+  label:'Female Voice',
+  flag:'🇺🇸',
+  gender:'female',
+  accent:'US',
+  pitch:1.20,
+  rate:1.00,
+  volume:1.00,
+  desc:'Clear, warm American female voice.',
+  preview:'Hello. I am Samantha. I speak American English with a clear, warm female voice.',
+  pref:['samantha','zira','victoria','michelle','susan','karen','moira','tessa','hazel','serena','kate','stephanie',
+        'google us english','google uk english female','microsoft zira','microsoft michelle','microsoft hazel','microsoft serena']}
+];
+
+/* ==============================================================
+   UTILITIES
+   ============================================================== */
+const $  = (s, r) => (r || document).querySelector(s);
+const $$ = (s, r) => Array.prototype.slice.call((r || document).querySelectorAll(s));
+
+const SafeStorage = {
+  get: function(k){ try { return localStorage.getItem(k); } catch(e){ return null; } },
+  set: function(k, v){ try { localStorage.setItem(k, v); return true; } catch(e){ return false; } },
+  remove: function(k){ try { localStorage.removeItem(k); } catch(e){} }
+};
+
+function esc(s){
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function shuffle(a){
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    const t=a[i]; a[i]=a[j]; a[j]=t;
+  }
+  return a;
+}
+let toastTimer=null;
+function toast(msg, ms){
+  const t=$('#toast');
+  t.textContent=msg;
+  t.classList.remove('hidden');
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>t.classList.add('hidden'), ms || 2800);
+}
+
+/* ==============================================================
+   IN-APP BROWSER DETECTION
+   ============================================================== */
+const ua = navigator.userAgent || '';
+const inAppInfo = (function(){
+  if (/FBAN|FBAV|FB_IAB|FBIOS/i.test(ua)) return { name:'Facebook', app:'facebook' };
+  if (/Instagram/i.test(ua)) return { name:'Instagram', app:'instagram' };
+  if (/WhatsApp/i.test(ua)) return { name:'WhatsApp', app:'whatsapp' };
+  if (/BytedanceWebview|TikTok|musical_ly/i.test(ua)) return { name:'TikTok', app:'tiktok' };
+  if (/Twitter/i.test(ua)) return { name:'Twitter / X', app:'twitter' };
+  if (/LinkedInApp/i.test(ua)) return { name:'LinkedIn', app:'linkedin' };
+  if (/Snapchat/i.test(ua)) return { name:'Snapchat', app:'snapchat' };
+  if (/Pinterest/i.test(ua)) return { name:'Pinterest', app:'pinterest' };
+  if (/Telegram/i.test(ua)) return { name:'Telegram', app:'telegram' };
+  if (/\bLine\//i.test(ua)) return { name:'LINE', app:'line' };
+  if (/Messenger/i.test(ua)) return { name:'Messenger', app:'messenger' };
+  if (/Slack/i.test(ua)) return { name:'Slack', app:'slack' };
+  if (/; wv\)/.test(ua) && /Chrome/i.test(ua)) return { name:'an in-app browser', app:'webview' };
+  return null;
+})();
+
+const isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+const isAndroid = /Android/i.test(ua);
+const isStandalone = window.navigator.standalone === true ||
+                     window.matchMedia('(display-mode: standalone)').matches;
+
+function getCurrentURL(){ return window.location.href; }
+
+function openInSystemBrowser(){
+  const url = getCurrentURL();
+  if (isAndroid){
+    const withoutProto = url.replace(/^https?:\/\//, '');
+    const scheme = url.indexOf('https://') === 0 ? 'https' : 'http';
+    const intentUrl = 'intent://' + withoutProto +
+                      '#Intent;scheme=' + scheme +
+                      ';package=com.android.chrome' +
+                      ';S.browser_fallback_url=' + encodeURIComponent(url) +
+                      ';end';
+    try { window.location.href = intentUrl; return true; } catch(e){}
+  }
+  if (isIOS){ showOpenHelp(); return false; }
+  try { window.open(url, '_blank', 'noopener'); return true; } catch(e){}
+  return false;
+}
+
+function showOpenHelp(){
+  if ($('#openHelp')) return;
+  const appName = inAppInfo ? inAppInfo.name : 'your app';
+  const modal = document.createElement('div');
+  modal.id = 'openHelp';
+  let stepsHTML = '';
+  if (isIOS){
+    if (inAppInfo && inAppInfo.app === 'whatsapp'){
+      stepsHTML =
+        '<div class="oh-step"><div class="oh-num">1</div><div>Tap the <b>Share ↗</b> icon at the bottom-right of WhatsApp.</div></div>' +
+        '<div class="oh-step"><div class="oh-num">2</div><div>Choose <b>Open in Safari</b> from the share sheet.</div></div>' +
+        '<div class="oh-step"><div class="oh-num">3</div><div>Safari will open the workbook — voices and quizzes will work fully.</div></div>';
+    } else if (inAppInfo && inAppInfo.app === 'facebook'){
+      stepsHTML =
+        '<div class="oh-step"><div class="oh-num">1</div><div>Tap the <b>⋯</b> (three dots) at the top-right of the Facebook in-app browser.</div></div>' +
+        '<div class="oh-step"><div class="oh-num">2</div><div>Choose <b>Open in Safari</b>.</div></div>' +
+        '<div class="oh-step"><div class="oh-num">3</div><div>The workbook will open in Safari with full voice support.</div></div>';
+    } else if (inAppInfo && inAppInfo.app === 'instagram'){
+      stepsHTML =
+        '<div class="oh-step"><div class="oh-num">1</div><div>Tap the <b>⋯</b> (three dots) at the top-right.</div></div>' +
+        '<div class="oh-step"><div class="oh-num">2</div><div>Choose <b>Open in Safari</b>.</div></div>' +
+        '<div class="oh-step"><div class="oh-num">3</div><div>Voices and quizzes will work fully in Safari.</div></div>';
+    } else {
+      stepsHTML =
+        '<div class="oh-step"><div class="oh-num">1</div><div>Tap the <b>⋯</b> or <b>Share</b> menu of ' + appName + '.</div></div>' +
+        '<div class="oh-step"><div class="oh-num">2</div><div>Choose <b>Open in Safari</b>.</div></div>' +
+        '<div class="oh-step"><div class="oh-num">3</div><div>The workbook will open in Safari with full voice support.</div></div>';
+    }
+  } else if (isAndroid){
+    stepsHTML =
+      '<div class="oh-step"><div class="oh-num">1</div><div>Tap the <b>⋮</b> (three dots) menu of ' + appName + '.</div></div>' +
+      '<div class="oh-step"><div class="oh-num">2</div><div>Choose <b>Open in Chrome</b> or <b>Open in browser</b>.</div></div>' +
+      '<div class="oh-step"><div class="oh-num">3</div><div>Chrome will open the workbook with full voice support.</div></div>';
+  } else {
+    stepsHTML =
+      '<div class="oh-step"><div class="oh-num">1</div><div>Copy this page’s link.</div></div>' +
+      '<div class="oh-step"><div class="oh-num">2</div><div>Paste it into Chrome, Safari, Edge or Firefox.</div></div>' +
+      '<div class="oh-step"><div class="oh-num">3</div><div>The workbook will work with full voice support.</div></div>';
+  }
+  modal.innerHTML =
+    '<div class="oh-card">' +
+      '<h2>🎧 Open in your real browser</h2>' +
+      '<div class="sub">You are viewing this page inside ' + esc(appName) +
+      '. Voice playback works best in a full browser.</div>' +
+      stepsHTML +
+      '<div class="oh-actions">' +
+        '<button class="btn primary" id="ohCopy">📋 Copy link</button>' +
+        '<button class="btn ghost" id="ohClose">Close</button>' +
+      '</div>' +
+    '</div>';
+  document.body.appendChild(modal);
+  $('#ohClose').addEventListener('click', function(){ modal.remove(); });
+  modal.addEventListener('click', function(e){ if (e.target === modal) modal.remove(); });
+  $('#ohCopy').addEventListener('click', function(){
+    const url = getCurrentURL();
+    let copied = false;
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){ toast('Link copied ✓'); });
+        copied = true;
+      }
+    } catch(e){}
+    if (!copied){
+      const ta = document.createElement('textarea');
+      ta.value = url; ta.style.position='fixed'; ta.style.left='-9999px';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); toast('Link copied ✓'); }
+      catch(e){ toast('Copy this link from the address bar.'); }
+      document.body.removeChild(ta);
+    }
+  });
+}
+
+function showInAppBannerIfNeeded(){
+  if (!inAppInfo || isStandalone) return;
+  const banner = $('#inAppBanner');
+  const text = $('#bannerText');
+  if (!banner) return;
+  text.textContent = '🎧 Open in ' + (isIOS ? 'Safari' : 'Chrome') +
+                     ' for full voice support (currently inside ' + inAppInfo.name + ').';
+  banner.classList.remove('hidden');
+  document.body.style.paddingTop = 'calc(108px + env(safe-area-inset-top))';
+}
+
+/* ==============================================================
+   HIGHLIGHTING
+   ============================================================== */
+const SUFFIX_LIST = [
+  'ization','isation','ationally','ically','ation','ition','ution','sion','tion',
+  'ment','ness','ity','ance','ence','ancy','ency','hood','ship','ture',
+  'ful','less','able','ible','ively','ive','ally','ical','ist','ism',
+  'ify','ize','ise','age','ous','ant','ly','al','ic'
+].sort((a,b)=>b.length-a.length);
+const PREFIX_MAP = {
+  'disempowering':'dis','irreversible':'ir',
+  'recycle':'re','recycling':'re','recycled':'re','recyclable':'re',
+  'represent':'re','representative':'re','representation':'re',
+  'multilingual':'multi','intermittency':'inter','infinite':'in',
+  'inscribe':'in','inscribed':'in','inscription':'in'
+};
+function hlToken(tok){
+  const lower = tok.toLowerCase();
+  let pre = PREFIX_MAP[lower] || '';
+  const body = tok.slice(pre.length);
+  const bodyLow = body.toLowerCase();
+  let suf = '';
+  for (let i=0;i<SUFFIX_LIST.length;i++){
+    const s = SUFFIX_LIST[i];
+    if (bodyLow.endsWith(s) && bodyLow.length - s.length >= 3){ suf = s; break; }
+  }
+  let out = '';
+  if (pre) out += '<span class="red">' + esc(tok.slice(0, pre.length)) + '</span>';
+  out += esc(tok.slice(pre.length, tok.length - suf.length));
+  if (suf) out += '<span class="red">' + esc(tok.slice(tok.length - suf.length)) + '</span>';
+  return out;
+}
+function hlPhrase(phrase){
+  return String(phrase).split(/(\s+)/).map(t => /^\s+$/.test(t) || t === '' ? t : hlToken(t)).join('');
+}
+function findTarget(sentence, word){
+  const low = sentence.toLowerCase();
+  const lw  = word.toLowerCase();
+  let idx = low.indexOf(lw);
+  if (idx >= 0) return { start: idx, len: word.length };
+  const stemLen = Math.max(4, Math.min(lw.length, 6));
+  const stem = lw.slice(0, stemLen);
+  idx = low.indexOf(stem);
+  if (idx < 0) return null;
+  let end = idx + stemLen;
+  while (end < sentence.length && /[a-z]/i.test(sentence[end])) end++;
+  return { start: idx, len: end - idx };
+}
+function markInSentence(sentence, word){
+  const hit = findTarget(sentence, word);
+  if (!hit) return esc(sentence);
+  return esc(sentence.slice(0, hit.start)) +
+         '<span class="hl">' + esc(sentence.slice(hit.start, hit.start + hit.len)) + '</span>' +
+         esc(sentence.slice(hit.start + hit.len));
+}
+function blankOut(sentence, word){
+  const hit = findTarget(sentence, word);
+  if (!hit) return esc(sentence) + ' ______';
+  return esc(sentence.slice(0, hit.start)) + '______' + esc(sentence.slice(hit.start + hit.len));
+}
+
+/* ==============================================================
+   VOICE ENGINE
+   ============================================================== */
+function getSynth(){
+  try {
+    if (typeof window === 'undefined') return null;
+    return window.speechSynthesis ||
+           window.webkitSpeechSynthesis ||
+           window.mozSpeechSynthesis ||
+           window.msSpeechSynthesis || null;
+  } catch(e){ return null; }
+}
+function getUtteranceCtor(){
+  try {
+    if (typeof SpeechSynthesisUtterance !== 'undefined') return SpeechSynthesisUtterance;
+    if (typeof window !== 'undefined'){
+      if (window.SpeechSynthesisUtterance) return window.SpeechSynthesisUtterance;
+      if (window.webkitSpeechSynthesisUtterance) return window.webkitSpeechSynthesisUtterance;
+    }
+  } catch(e){}
+  return null;
+}
+
+let voicesReady = [];
+let voicesLoaded = false;
+let voicesLoading = true;
+let selectedSpeaker = null;
+let rateMultiplier = 1.0;
+let speakQueue = [];
+let isSpeaking = false;
+let speechPrimed = false;
+let speechEverWorked = false;
+let resumeTimer = null;
+let voiceLoadAttempts = 0;
+const MAX_VOICE_ATTEMPTS = 40;
+let genderReport = { male: 0, female: 0, unknown: 0, total: 0 };
+
+function primeSpeech(){
+  if (speechPrimed) return;
+  speechPrimed = true;
+  const synth = getSynth();
+  const Ctor = getUtteranceCtor();
+  if (!synth || !Ctor){
+    [300, 800, 1500, 3000, 6000, 10000].forEach(function(d){
+      setTimeout(function(){
+        if (getSynth() && getUtteranceCtor()){
+          refreshSpeechStatus();
+          loadVoices();
+          updateVoiceStatus();
+        }
+      }, d);
+    });
+    refreshSpeechStatus();
+    return;
+  }
+  try {
+    const u = new Ctor(' ');
+    u.volume = 0; u.rate = 1; u.pitch = 1;
+    u.onstart = function(){ speechEverWorked = true; refreshSpeechStatus(); };
+    u.onend = function(){ speechEverWorked = true; refreshSpeechStatus(); };
+    synth.speak(u);
+    setTimeout(function(){ try { synth.cancel(); } catch(e){} }, 120);
+  } catch(e){}
+  [0, 60, 350, 900, 1800, 3200, 5500].forEach(function(d){ setTimeout(loadVoices, d); });
+  refreshSpeechStatus();
+}
+['touchstart','mousedown','click','keydown','pointerdown','scroll'].forEach(function(ev){
+  window.addEventListener(ev, primeSpeech, { once:true, passive:true, capture:true });
+});
+
+function loadVoices(){
+  const synth = getSynth();
+  if (!synth){ voicesLoading = false; updateVoiceStatus(); return; }
+  let v = [];
+  try { v = synth.getVoices() || []; } catch(e){ v = []; }
+  if (v && v.length){
+    voicesReady = v;
+    voicesLoaded = true;
+    voicesLoading = false;
+    assignVoices();
+    updateVoiceStatus();
+    refreshSpeechStatus();
+  } else {
+    voiceLoadAttempts++;
+    if (voiceLoadAttempts < MAX_VOICE_ATTEMPTS){
+      const delay = Math.min(100 * Math.pow(1.15, voiceLoadAttempts), 2000);
+      setTimeout(loadVoices, delay);
+    } else {
+      voicesLoading = false;
+      updateVoiceStatus();
+      refreshSpeechStatus();
+    }
+  }
+}
+function setupSynthListeners(){
+  const synth = getSynth();
+  if (!synth) return;
+  try {
+    if ('onvoiceschanged' in synth){
+      synth.onvoiceschanged = function(){ voiceLoadAttempts = 0; loadVoices(); };
+    }
+  } catch(e){}
+}
+setupSynthListeners();
+loadVoices();
+setTimeout(setupSynthListeners, 500);
+setTimeout(setupSynthListeners, 2000);
+setTimeout(loadVoices, 800);
+setTimeout(loadVoices, 2000);
+setTimeout(loadVoices, 4000);
+let pollCount = 0;
+const pollInterval = setInterval(function(){
+  pollCount++;
+  loadVoices();
+  setupSynthListeners();
+  if ((voicesLoaded && voicesReady.length) || pollCount > 60) clearInterval(pollInterval);
+}, 600);
+document.addEventListener('visibilitychange', function(){
+  if (!document.hidden){ voiceLoadAttempts = 0; loadVoices(); setupSynthListeners(); refreshSpeechStatus(); }
+});
+window.addEventListener('focus', function(){ voiceLoadAttempts = 0; loadVoices(); setupSynthListeners(); refreshSpeechStatus(); });
+window.addEventListener('pageshow', function(){ voiceLoadAttempts = 0; loadVoices(); setupSynthListeners(); refreshSpeechStatus(); });
+
+function startResumeTimer(){
+  stopResumeTimer();
+  resumeTimer = setInterval(function(){
+    const s = getSynth();
+    try { if (s && s.speaking && !s.paused) s.resume(); } catch(e){}
+  }, 8000);
+}
+function stopResumeTimer(){
+  if (resumeTimer){ clearInterval(resumeTimer); resumeTimer = null; }
+}
+
+function chunkText(text, maxLen){
+  maxLen = maxLen || 180;
+  if (!text || text.length <= maxLen) return [text || ''];
+  const chunks = [];
+  const sentences = text.match(/[^.!?]+[.!?]*/g) || [text];
+  let current = '';
+  sentences.forEach(function(s){
+    if ((current + s).length > maxLen && current.length > 0){
+      chunks.push(current.trim()); current = '';
+    }
+    if (s.length > maxLen){
+      const parts = s.split(/(?<=[,;:])\s+/);
+      parts.forEach(function(p){
+        if ((current + p).length > maxLen && current.length > 0){
+          chunks.push(current.trim()); current = '';
+        }
+        current += p + ' ';
+      });
+    } else { current += s + ' '; }
+  });
+  if (current.trim()) chunks.push(current.trim());
+  return chunks.length ? chunks : [text];
+}
+
+/* ---------- GENDER DETECTION ---------- */
+const FEMALE_HINTS = [
+  'samantha','karen','moira','tessa','fiona','victoria','serena','allison','ava','susan','vicki',
+  'zira','hazel','heera','sabina','linda','catherine','monica','paulina','rosa','yelda','michelle',
+  'aria','jenny','cortana','eva','tracy','mary','sayaka','ayumi','haruka','nanami',
+  'google uk english female',
+  'female','woman','girl','lady',
+  'zeina','laila','hala','salma','maryam','zariyah','hoda','amina','kayla','martha','fatima','noura',
+  'anna','emma','leah','libby','siobhan','amelie','kyoko','liting','ting-ting','yuna','yuri','sara',
+  'laura','audrey','marie','carmit','daria','kanya','mei-jia','melina','milena','nora','satu',
+  'tarja','zosia','ines','helena','katja','maja','zuzana','ioana','alva','klara','sora','louise',
+  'julie','celine','chantal','flo','sandy','shelley','kathy','princess','agnes'
+];
+const MALE_HINTS = [
+  'alex','fred','daniel','arthur','oliver','rishi','thomas','aaron',
+  'david','mark','guy','george','james','ryan','brian','eric','christopher','matthew','andrew','tom',
+  'liam','nathan','richard','william','henry','edward','benjamin','jacob',
+  'google uk english male',
+  'male','man','boy',
+  'tarik','maged','hamza','omar','youssef','ali','moaz','hassan','khaled','ahmed','mustafa','tariq',
+  'jorge','diego','juan','carlos','pedro','pavel','lukas','martin','jan','milan','alexander','klaus',
+  'hans','stefan','pieter','willem','mathieu','thierry','antoine','henri','luca','matteo','giovanni',
+  'kaito','takeshi','kenji','mizuki','otoya','yohei','dimitri','ivan','peter','robert'
+];
+function genderOf(v){
+  const n = ((v.name || '') + ' ' + (v.voiceURI || '')).toLowerCase();
+  if (/\bfemale\b/.test(n)) return 'female';
+  if (/\bmale\b/.test(n) && !/\bfemale\b/.test(n)) return 'male';
+  for (const f of FEMALE_HINTS) if (n.indexOf(f) >= 0) return 'female';
+  for (const m of MALE_HINTS)  if (n.indexOf(m) >= 0) return 'male';
+  return 'unknown';
+}
+function qualityOf(v){
+  const n = (v.name || '').toLowerCase();
+  if (n.indexOf('natural') >= 0 || n.indexOf('neural') >= 0 || n.indexOf('enhanced') >= 0 ||
+      n.indexOf('premium') >= 0 || n.indexOf('siri') >= 0) return 'NATURAL';
+  if (n.indexOf('google') >= 0 || n.indexOf('microsoft') >= 0) return 'PREMIUM';
+  return 'STANDARD';
+}
+function isOfflineVoice(v){ return v && v.localService === true; }
+function rankVoices(list){
+  const score = v => {
+    const q = qualityOf(v);
+    let s = q === 'NATURAL' ? 3 : q === 'PREMIUM' ? 2 : 1;
+    if (isOfflineVoice(v)) s += 5;
+    return s;
+  };
+  return list.slice().sort((a,b)=>score(b)-score(a));
+}
+
+function assignVoices(){
+  const all = voicesReady.filter(v => v && v.lang);
+  if (!all.length) return;
+  const english = rankVoices(all.filter(v => /^en/i.test(v.lang)));
+  const malePool   = english.filter(v => genderOf(v) === 'male');
+  const femalePool = english.filter(v => genderOf(v) === 'female');
+  const unknownPool = english.filter(v => genderOf(v) === 'unknown');
+  genderReport = { male: malePool.length, female: femalePool.length, unknown: unknownPool.length, total: english.length };
+
+  SPEAKERS.forEach(function(sp){
+    const pool = sp.gender === 'male' ? malePool : femalePool;
+    let v = null;
+
+    /* 1. Preferred names within same-gender pool */
+    for (let i=0;i<sp.pref.length && !v;i++){
+      v = pool.find(x => x.name.toLowerCase().indexOf(sp.pref[i]) >= 0);
+    }
+    /* 2. Preferred names within unknown pool */
+    for (let i=0;i<sp.pref.length && !v;i++){
+      v = unknownPool.find(x => x.name.toLowerCase().indexOf(sp.pref[i]) >= 0);
+    }
+    /* 3. Any same-gender voice */
+    if (!v) v = pool[0];
+    /* 4. Any unknown voice */
+    if (!v) v = unknownPool[0];
+    /* 5. Any English voice */
+    if (!v) v = english[0];
+    /* 6. Any voice at all */
+    if (!v) v = all[0] || null;
+
+    sp.voice = v;
+    sp.voiceGender = v ? genderOf(v) : 'unknown';
+    sp.quality = v ? qualityOf(v) : 'STANDARD';
+    sp.offline = v ? isOfflineVoice(v) : false;
+    sp.crossGender = (v && sp.voiceGender !== 'unknown' && sp.voiceGender !== sp.gender);
+  });
+}
+
+function updateVoiceStatus(){
+  const el = $('#voiceStatus');
+  const help = $('#voiceHelpBox');
+  const gw = $('#genderWarning');
+  if (!el) return;
+  const synth = getSynth();
+  const Ctor = getUtteranceCtor();
+  if (!synth || !Ctor){
+    el.className = 'voice-status error';
+    if (!speechPrimed){
+      el.textContent = '👆 Tap anywhere on the page to enable speech.';
+      if (help) help.classList.add('hidden');
+    } else {
+      el.textContent = '🔇 Speech is not available here.';
+      if (help){
+        help.classList.remove('hidden');
+        help.innerHTML =
+          '<b>How to fix speech on your device</b>' +
+          '<ol>' +
+            (inAppInfo ? '<li>You are inside <b>' + esc(inAppInfo.name) + '</b>. Tap <b>Open</b> in the yellow banner to switch to your real browser.</li>' : '') +
+            '<li>Open this file in <b>Chrome</b> (Android) or <b>Safari</b> (iPhone).</li>' +
+            '<li>On iPhone, silent mode may block speech — flick off the silent switch.</li>' +
+            '<li>Tap the 🔄 button below to retry.</li>' +
+          '</ol>';
+      }
+    }
+    if (gw) gw.classList.add('hidden');
+    return;
+  }
+  if (help) help.classList.add('hidden');
+  if (voicesLoading && !voicesLoaded){
+    el.className = 'voice-status loading';
+    el.textContent = '🔄 Loading device voices…';
+    if (gw) gw.classList.add('hidden');
+    return;
+  }
+  const engCount = voicesReady.filter(v => /^en/i.test(v.lang)).length;
+  const localCount = voicesReady.filter(v => isOfflineVoice(v)).length;
+  const m = genderReport.male;
+  const f = genderReport.female;
+  if (!speechEverWorked){
+    el.className = 'voice-status loading';
+    el.textContent = '👆 Tap anywhere to enable voice playback.';
+    if (gw) gw.classList.add('hidden');
+    return;
+  }
+  if (engCount === 0){
+    el.className = 'voice-status warn';
+    el.textContent = '⚠️ Speech ready, but no English voices found yet. Try tapping again.';
+  } else {
+    el.className = 'voice-status';
+    el.textContent = '✓ Ready · ' + engCount + ' English · ' + m + '♂ ' + f + '♀ · ' + localCount + ' offline';
+  }
+  if (gw){
+    if (m === 0 && f === 0){
+      gw.classList.remove('hidden');
+      gw.innerHTML = '<b>⚠️ No gender-specific English voices found.</b> Pitch will be adjusted so the male speaker sounds male and the female speaker sounds female.';
+    } else if (m === 0){
+      gw.classList.remove('hidden');
+      gw.innerHTML = '<b>⚠️ No male English voice found on this device.</b> The male speaker will use a female voice with a lowered pitch to sound masculine.';
+    } else if (f === 0){
+      gw.classList.remove('hidden');
+      gw.innerHTML = '<b>⚠️ No female English voice found on this device.</b> The female speaker will use a male voice with a raised pitch to sound feminine.';
+    } else {
+      gw.classList.add('hidden');
+    }
+  }
+}
+
+function refreshSpeechStatus(){
+  const card = $('#speechStatusCard');
+  const dot = $('#speechDot');
+  const synth = getSynth();
+  const Ctor = getUtteranceCtor();
+  let state, icon, title, desc;
+  if (!synth || !Ctor){
+    if (!speechPrimed){
+      state = 'priming'; icon = '👆';
+      title = 'Tap anywhere to enable speech';
+      desc = 'Your browser needs one tap before it can speak.';
+    } else {
+      state = 'error'; icon = '🔇';
+      title = 'Speech not available here';
+      desc = inAppInfo ? 'Tap "Open" in the yellow banner to switch to your real browser.' :
+                         'Try opening in Chrome (Android) or Safari (iPhone).';
+    }
+  } else if (!speechEverWorked){
+    state = 'priming'; icon = '👆';
+    title = 'Tap anywhere to enable speech';
+    desc = 'One tap is all it takes — then words become tappable to hear.';
+  } else {
+    state = 'ready'; icon = '✅';
+    title = 'Speech is ready';
+    desc = 'Male and female voices are ready — tap any word to hear it.';
+  }
+  if (card){
+    card.className = 'speech-status-card ' + state;
+    const ic = $('.ss-icon', card); if (ic) ic.textContent = icon;
+    const ti = $('.ss-title', card); if (ti) ti.textContent = title;
+    const de = $('.ss-desc', card); if (de) de.textContent = desc;
+  }
+  if (dot) dot.className = state === 'ready' ? 'ready' : (state === 'error' ? 'error' : '');
+  if ($('#voicePanel') && !$('#voicePanel').classList.contains('hidden')) updateVoiceStatus();
+}
+
+function updateVis(on, text){
+  const vis = $('#vis');
+  if (on){ vis.classList.remove('hidden'); $('#stopFab').classList.remove('hidden'); }
+  else   { vis.classList.add('hidden');    $('#stopFab').classList.add('hidden'); }
+  $('#nowWord').textContent = text || 'Speaking…';
+}
+function stopSpeak(){
+  speakQueue = [];
+  isSpeaking = false;
+  const s = getSynth();
+  if (s) { try { s.cancel(); } catch(e){} }
+  stopResumeTimer();
+  updateVis(false);
+}
+
+function buildUtterance(text, sp, isArabic){
+  const Ctor = getUtteranceCtor();
+  if (!Ctor) return null;
+  const u = new Ctor(text);
+  if (isArabic){
+    const arVoice = voicesReady.find(v => /^ar/i.test(v.lang));
+    if (arVoice){ u.voice = arVoice; u.lang = arVoice.lang; }
+    else { u.lang = 'ar-SA'; }
+    u.pitch = 1.0; u.rate = 0.98 * rateMultiplier; u.volume = 1.0;
+    return u;
+  }
+  if (sp.voice){ u.voice = sp.voice; u.lang = sp.voice.lang; }
+  else { u.lang = sp.accent === 'GB' ? 'en-GB' : 'en-US'; }
+  let effectivePitch = sp.pitch;
+  if (sp.crossGender){
+    if (sp.gender === 'male') effectivePitch = Math.max(0.25, sp.pitch * 0.55);
+    else effectivePitch = Math.min(1.80, sp.pitch * 1.50);
+  }
+  u.pitch  = effectivePitch;
+  u.rate   = Math.max(0.85, Math.min(1.20, sp.rate * rateMultiplier));
+  u.volume = (sp.volume != null) ? sp.volume : 1.0;
+  return u;
+}
+
+function handleSpeechUnavailable(){
+  if (!speechPrimed){
+    primeSpeech();
+    toast('👆 Tap anywhere once, then try again.', 3200);
+  } else {
+    toast('🔇 Speech not available here. Try Chrome or Safari.', 3600);
+    openVoicePanel();
+    updateVoiceStatus();
+  }
+  refreshSpeechStatus();
+}
+
+function speakList(list){
+  if (!list || !list.length) return;
+  const synth = getSynth();
+  const Ctor = getUtteranceCtor();
+  if (!synth || !Ctor){ handleSpeechUnavailable(); return; }
+  if (!speechPrimed) primeSpeech();
+  stopSpeak();
+  const expanded = [];
+  list.forEach(function(item){
+    const parts = chunkText(item.text);
+    parts.forEach(function(p, i){
+      expanded.push({
+        text: p, label: item.label || item.text, arabic: !!item.arabic,
+        isChunk: parts.length > 1, chunkIdx: i, totalChunks: parts.length
+      });
+    });
+  });
+  speakQueue = expanded;
+  isSpeaking = true;
+  updateVis(true, 'Starting…');
+  startResumeTimer();
+  setTimeout(nextInQueue, 180);
+}
+function nextInQueue(){
+  if (!isSpeaking || !speakQueue.length){
+    isSpeaking = false; updateVis(false); stopResumeTimer(); return;
+  }
+  const item = speakQueue.shift();
+  const sp = selectedSpeaker || SPEAKERS[0];
+  let u;
+  try { u = buildUtterance(item.text, sp, item.arabic); }
+  catch(e){ setTimeout(nextInQueue, 100); return; }
+  if (!u){ handleSpeechUnavailable(); return; }
+  const label = item.isChunk && item.totalChunks > 1
+    ? item.label + ' (' + (item.chunkIdx+1) + '/' + item.totalChunks + ')'
+    : (item.label || item.text);
+  updateVis(true, label);
+  let advanced = false;
+  const advance = function(){ if (advanced) return; advanced = true; setTimeout(nextInQueue, 90); };
+  u.onstart = function(){ speechEverWorked = true; refreshSpeechStatus(); };
+  u.onend = advance;
+  u.onerror = advance;
+  const textLen = (item.text || '').length;
+  const timeoutMs = Math.max(3000, textLen * 130);
+  setTimeout(function(){ if (!advanced && isSpeaking) advance(); }, timeoutMs);
+  const synth = getSynth();
+  if (!synth){ handleSpeechUnavailable(); return; }
+  try { synth.speak(u); } catch(e){ advance(); }
+}
+function sayWord(text, label){ speakList([{ text: text, label: label || text }]); }
+function sayPage(){
+  if (!currentSection) return;
+  const list = [];
+  currentSection.items.forEach(function(it){
+    const en = it[0];
+    const ar = currentSection.kind === 'vocab' ? it[1] : it[2];
+    list.push({ text: en, label: en });
+    if (ar) list.push({ text: ar, arabic: true, label: ar });
+  });
+  if (!list.length) return;
+  speakList(list);
+}
+function previewSpeaker(sp){
+  const synth = getSynth();
+  const Ctor = getUtteranceCtor();
+  if (!synth || !Ctor){ handleSpeechUnavailable(); return; }
+  primeSpeech();
+  try { synth.cancel(); } catch(e){}
+  setTimeout(function(){
+    let u;
+    try { u = buildUtterance(sp.preview, sp, false); } catch(e){ return; }
+    if (!u) return;
+    updateVis(true, '🎧 ' + sp.name + ' · ' + sp.desc);
+    let done = false;
+    const finish = function(){ if (done) return; done = true; updateVis(false); };
+    u.onstart = function(){ speechEverWorked = true; refreshSpeechStatus(); };
+    u.onend = finish;
+    u.onerror = finish;
+    setTimeout(function(){ if (!done) finish(); }, 9000);
+    const s = getSynth();
+    if (!s){ finish(); return; }
+    try { s.speak(u); } catch(e){ finish(); }
+  }, 220);
+}
+
+/* ==============================================================
+   PAGE MODEL
+   ============================================================== */
+const PAGES = [{ id:'welcome', title:'Welcome & Settings', kind:'welcome' }];
+UNITS.forEach(function(u){
+  u.sections.forEach(function(s){
+    PAGES.push({ id:s.id, title:s.title, kind:s.kind, items:s.items, unitTitle:u.title, unitId:u.id });
+  });
+});
+let currentPageId = null;
+let currentSection = null;
+let visited = new Set();
+const LS = { page:'vocab_page', speaker:'vocab_speaker', rate:'vocab_rate', visited:'vocab_visited' };
+function saveVisited(){ SafeStorage.set(LS.visited, JSON.stringify(Array.from(visited))); }
+function loadVisited(){
+  const raw = SafeStorage.get(LS.visited);
+  if (raw){ try { visited = new Set(JSON.parse(raw)); } catch(e){} }
+}
+
+/* ==============================================================
+   RENDERING
+   ============================================================== */
+function wordRowHTML(item, index, kind){
+  const en   = item[0];
+  const ar   = kind === 'vocab' ? item[1] : item[2];
+  const pos  = kind === 'vocab' ? '' : '<span class="pos">' + esc(item[1]) + '</span>';
+  const sents = kind === 'vocab' ? [item[3]] : item[3];
+  let html = '<div class="word-row" data-say="' + esc(en) + '" tabindex="0" role="button" aria-label="Say ' + esc(en) + '">';
+  html += '<div class="wr-top">';
+  html += '<span class="num">' + (index+1) + '</span>';
+  html += '<span class="en">' + hlPhrase(en) + pos + '</span>';
+  html += '<span class="dot">·</span>';
+  html += '<span class="ar">' + esc(ar) + '</span>';
+  html += '</div>';
+  if (kind === 'vocab') html += '<div class="def">' + esc(item[2]) + '</div>';
+  sents.forEach(function(s){ html += '<div class="sent">' + markInSentence(s, en) + '</div>'; });
+  html += '</div>';
+  return html;
+}
+function renderWelcome(){
+  let html = '<div class="page" data-page="welcome">';
+  html += '<div class="welcome-card">';
+  html += '<h1>Comprehensive Vocabulary<br>Egyptian Baccalaureate English 2nd Year</h1>';
+  html += '<div class="sub">Units 1–5 · Vocabulary, Word Families, Quizzes &amp; Voice Practice</div>';
+  html += '<div class="author">Mr. Sherif Gouda</div>';
+  html += '</div>';
+  html += '<div class="speech-status-card priming" id="speechStatusCard">';
+  html += '<div class="ss-icon">👆</div>';
+  html += '<div class="ss-text">';
+  html += '<div class="ss-title">Tap anywhere to enable speech</div>';
+  html += '<div class="ss-desc">Your browser needs one tap before it can speak.</div>';
+  html += '</div>';
+  html += '<button class="ss-btn" id="speechRetryBtn">Retry</button>';
+  html += '</div>';
+  html += '<section class="settings-card">';
+  html += '<h2>⚙️ Quick Settings</h2>';
+  html += '<div class="settings-grid">';
+  html += '<div class="setting-block">';
+  html += '<label for="welcomeVoiceSelect">🎙️ Your Voice</label>';
+  html += '<select id="welcomeVoiceSelect"></select>';
+  html += '<div class="hint" id="welcomeVoiceHint">Choose a voice, then tap ▶ to hear it.</div>';
+  html += '<div class="row" style="margin-top:8px">';
+  html += '<button class="btn ghost" id="welcomePreview" style="flex:1">▶ Hear this voice</button>';
+  html += '</div>';
+  html += '</div>';
+  html += '<div class="setting-block">';
+  html += '<label for="welcomeRate">🎚️ Speed adjustment</label>';
+  html += '<div class="row">';
+  html += '<input type="range" id="welcomeRate" min="0.85" max="1.15" step="0.01" value="1">';
+  html += '<span class="val" id="welcomeRateVal">1.00×</span>';
+  html += '</div>';
+  html += '<div class="hint">Small fine-tuning only. Both voices speak at a natural pace.</div>';
+  html += '</div>';
+  html += '</div>';
+  html += '<div class="settings-actions">';
+  html += '<button class="btn green" data-goto="u1c1">🚀 Start Learning</button>';
+  html += '<button class="btn primary" id="openFullVoice">🎙️ Hear Both Voices</button>';
+  html += '</div>';
+  html += '</section>';
+  html += '<div class="welcome-grid">';
+  UNITS.forEach(function(u){
+    html += '<button class="wcard" data-goto="' + u.sections[0].id + '">';
+    html += '<div class="t">' + esc(u.title) + '</div>';
+    html += '<div class="d">' + u.sections.length + ' sections</div>';
+    html += '</button>';
+  });
+  html += '</div>';
+  html += '</div>';
+  return html;
+}
+function renderSectionPage(sec, unitTitle){
+  let html = '<div class="page" data-page="' + sec.id + '">';
+  html += '<div class="page-header">';
+  html += '<div class="eyebrow">' + esc(unitTitle) + '</div>';
+  html += '<h1>' + esc(sec.title) + '</h1>';
+  html += '</div>';
+  html += '<div class="toolbar no-print">';
+  html += '<button class="btn primary" data-sayall>🔊 Say all words</button>';
+  html += '<button class="btn amber" data-stop>⏹ Stop</button>';
+  html += '</div>';
+  html += '<div class="rows">';
+  sec.items.forEach(function(it, i){ html += wordRowHTML(it, i, sec.kind); });
+  html += '</div>';
+  html += '<div class="quiz-slot" data-quiz="' + sec.id + '"></div>';
+  html += '<div class="pagenav no-print">';
+  html += '<button class="navbtn" data-nav="prev">← Previous</button>';
+  html += '<button class="navbtn" data-nav="next">Next →</button>';
+  html += '</div>';
+  html += '</div>';
+  return html;
+}
+function buildAllPages(){
+  const main = $('#pages');
+  let html = renderWelcome();
+  UNITS.forEach(function(u){
+    u.sections.forEach(function(s){ html += renderSectionPage(s, u.title); });
+  });
+  main.innerHTML = html;
+  $$('[data-goto]').forEach(function(b){
+    b.addEventListener('click', function(){ showPage(b.getAttribute('data-goto')); });
+  });
+  const wv = $('#openFullVoice');
+  if (wv) wv.addEventListener('click', openVoicePanel);
+  const sel = $('#welcomeVoiceSelect');
+  if (sel){
+    sel.innerHTML = SPEAKERS.map(function(sp){
+      const g = sp.gender === 'male' ? '♂' : '♀';
+      return '<option value="' + sp.id + '">' + sp.flag + ' ' + sp.name + ' ' + g + ' · ' + sp.desc + '</option>';
+    }).join('');
+    sel.value = (selectedSpeaker || SPEAKERS[0]).id;
+    sel.addEventListener('change', function(){ selectSpeaker(sel.value, true); });
+  }
+  const previewBtn = $('#welcomePreview');
+  if (previewBtn) previewBtn.addEventListener('click', function(){
+    previewSpeaker(selectedSpeaker || SPEAKERS[0]);
+  });
+  const rateInp = $('#welcomeRate');
+  if (rateInp){
+    rateInp.value = rateMultiplier;
+    $('#welcomeRateVal').textContent = rateMultiplier.toFixed(2) + '×';
+    rateInp.addEventListener('input', function(){
+      rateMultiplier = parseFloat(this.value);
+      $('#welcomeRateVal').textContent = rateMultiplier.toFixed(2) + '×';
+      syncRateUI();
+      SafeStorage.set(LS.rate, String(rateMultiplier));
+    });
+  }
+  const retryBtn = $('#speechRetryBtn');
+  if (retryBtn) retryBtn.addEventListener('click', function(){
+    voiceLoadAttempts = 0;
+    setupSynthListeners();
+    loadVoices();
+    refreshSpeechStatus();
+    updateVoiceStatus();
+    toast('🔄 Re-checking speech support…');
+  });
+  PAGES.forEach(function(p){
+    if (p.kind === 'welcome') return;
+    const page = $('.page[data-page="' + p.id + '"]');
+    if (!page) return;
+    const sayBtn = $('[data-sayall]', page);
+    if (sayBtn) sayBtn.addEventListener('click', function(){ currentSection = p; sayPage(); });
+    const stopBtn = $('[data-stop]', page);
+    if (stopBtn) stopBtn.addEventListener('click', stopSpeak);
+    $$('.word-row', page).forEach(function(row){
+      row.addEventListener('click', function(){
+        const w = row.getAttribute('data-say');
+        sayWord(w, w);
+      });
+      row.addEventListener('keydown', function(e){
+        if (e.key === 'Enter' || e.key === ' '){
+          e.preventDefault();
+          const w = row.getAttribute('data-say');
+          sayWord(w, w);
+        }
+      });
+    });
+    $('[data-nav="prev"]', page).addEventListener('click', goPrev);
+    $('[data-nav="next"]', page).addEventListener('click', goNext);
+  });
+  refreshSpeechStatus();
+}
+
+/* ==============================================================
+   QUIZ
+   ============================================================== */
+function buildPool(sec){
+  const pool = [];
+  sec.items.forEach(function(it){
+    let word, clue, sents;
+    if (sec.kind === 'vocab'){ word = it[0]; clue = it[2]; sents = [it[3]]; }
+    else { word = it[0]; clue = 'the ' + it[1] + ' meaning "' + it[2] + '"'; sents = it[3]; }
+    sents.forEach(function(s){ pool.push({ word:word, clue:clue, sent:s }); });
+  });
+  return pool;
+}
+function makeQuestions(sec, n){
+  const pool = buildPool(sec);
+  const words = Array.from(new Set(sec.items.map(function(it){ return it[0]; })));
+  const out = [];
+  let bag = [];
+  let guard = 0;
+  while (out.length < n && guard < n * 6){
+    guard++;
+    if (!bag.length) bag = shuffle(pool.slice());
+    const p = bag.pop();
+    if (!p) break;
+    const opts = [p.word];
+    const others = shuffle(words.filter(function(w){ return w !== p.word; }));
+    for (let i=0;i<others.length && opts.length<4;i++) opts.push(others[i]);
+    if (opts.length < 4){
+      const global = [];
+      UNITS.forEach(function(u){ u.sections.forEach(function(s){
+        s.items.forEach(function(it){ if (global.indexOf(it[0])<0) global.push(it[0]); });
+      });});
+      const gs = shuffle(global.filter(function(w){ return opts.indexOf(w) < 0; }));
+      for (let i=0;i<gs.length && opts.length<4;i++) opts.push(gs[i]);
+    }
+    shuffle(opts);
+    out.push({ stem: blankOut(p.sent, p.word), clue: p.clue, answer: p.word, options: opts });
+  }
+  return out;
+}
+function makeQuiz(sec){
+  const wrap = document.createElement('section');
+  wrap.className = 'quiz';
+  wrap.innerHTML =
+    '<div class="quiz-head">' +
+      '<h3>🧠 Quiz — ' + esc(sec.title) + '</h3>' +
+      '<span class="score-pill" data-score>0 / 0</span>' +
+    '</div>' +
+    '<div class="quiz-body"></div>' +
+    '<div class="quiz-actions"><button class="btn primary" data-start>Start Quiz</button></div>';
+  const body = $('.quiz-body', wrap);
+  const scoreEl = $('[data-score]', wrap);
+  const startBtn = $('[data-start]', wrap);
+  let answered = 0, correct = 0;
+  function onAnswer(ok){ answered++; if (ok) correct++; scoreEl.textContent = correct + ' / ' + answered; }
+  function renderQuestion(q, idx){
+    const qEl = document.createElement('div');
+    qEl.className = 'q';
+    let h = '<div class="q-stem"><b>' + (idx+1) + '.</b> Choose the word that means “<i>' +
+            esc(q.clue) + '</i>” to complete this sentence: “<span class="blank">' +
+            q.stem + '</span>”</div>';
+    h += '<div class="q-opts">';
+    q.options.forEach(function(o){ h += '<button class="opt" data-w="' + esc(o) + '">' + esc(o) + '</button>'; });
+    h += '</div><div class="fb"></div>';
+    qEl.innerHTML = h;
+    const fb = $('.fb', qEl);
+    const opts = $$('.opt', qEl);
+    let done = false;
+    opts.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        if (done) return;
+        done = true;
+        const chosen = btn.getAttribute('data-w');
+        const ok = chosen === q.answer;
+        opts.forEach(function(b){
+          b.disabled = true;
+          if (b.getAttribute('data-w') === q.answer) b.classList.add('correct');
+        });
+        if (!ok){ btn.classList.add('wrong'); fb.className = 'fb no'; fb.textContent = '✗ Correct answer: ' + q.answer; }
+        else { fb.className = 'fb ok'; fb.textContent = '✓ Correct! ' + q.answer; }
+        onAnswer(ok);
+      });
+    });
+    return qEl;
+  }
+  function start(){
+    answered = 0; correct = 0;
+    scoreEl.textContent = '0 / 0';
+    body.innerHTML = '';
+    startBtn.textContent = 'Restart Quiz';
+    const qs = makeQuestions(sec, 15);
+    qs.forEach(function(q, i){ body.appendChild(renderQuestion(q, i)); });
+  }
+  startBtn.addEventListener('click', start);
+  return wrap;
+}
+function mountQuiz(sec){
+  const slot = $('[data-quiz="' + sec.id + '"]');
+  if (!slot || slot.getAttribute('data-mounted') === '1') return;
+  slot.setAttribute('data-mounted','1');
+  slot.appendChild(makeQuiz(sec));
+}
+
+/* ==============================================================
+   NAVIGATION
+   ============================================================== */
+function buildMenu(){
+  const inner = $('#menuInner');
+  let html = '';
+  html += '<div class="menu-head">';
+  html +=   '<h2>📚 Navigation Ladder</h2>';
+  html +=   '<button class="menu-close" id="menuClose" aria-label="Close menu">✕</button>';
+  html += '</div>';
+  html += '<div class="ladder">';
+  html += '<button class="menu-item home" data-page="welcome">🏠 Welcome &amp; Settings</button>';
+  UNITS.forEach(function(u){
+    html += '<div class="ladder-unit">';
+    html += '<div class="ladder-unit-title">' + esc(u.title) + '</div>';
+    u.sections.forEach(function(s){
+      html += '<button class="menu-item" data-page="' + s.id + '">' + esc(s.title) + '</button>';
+    });
+    html += '</div>';
+  });
+  html += '</div>';
+  inner.innerHTML = html;
+  $$('.menu-item', inner).forEach(function(b){
+    b.addEventListener('click', function(){
+      showPage(b.getAttribute('data-page'));
+      closeMenu();
+    });
+  });
+  const closeBtn = $('#menuClose', inner);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+}
+function openMenu(){ $('#menuPanel').classList.remove('hidden'); }
+function closeMenu(){ $('#menuPanel').classList.add('hidden'); }
+function openVoicePanel(){ $('#voicePanel').classList.remove('hidden'); updateVoiceStatus(); }
+function closeVoicePanel(){ $('#voicePanel').classList.add('hidden'); }
+function updateProgress(){ $('#progressPill').textContent = visited.size + ' / ' + PAGES.length; }
+function showPage(id){
+  const page = PAGES.find(function(p){ return p.id === id; });
+  if (!page) return;
+  currentPageId = id;
+  currentSection = page.kind === 'welcome' ? null : page;
+  $$('.page').forEach(function(p){ p.classList.remove('active'); });
+  const el = $('.page[data-page="' + id + '"]');
+  if (el) el.classList.add('active');
+  $$('.menu-item').forEach(function(b){
+    b.classList.toggle('active', b.getAttribute('data-page') === id);
+  });
+  if (page.kind !== 'welcome') mountQuiz(page);
+  visited.add(id);
+  saveVisited();
+  updateProgress();
+  SafeStorage.set(LS.page, id);
+  window.scrollTo({ top:0, behavior:'smooth' });
+  refreshSpeechStatus();
+}
+function currentIndex(){ return PAGES.findIndex(function(p){ return p.id === currentPageId; }); }
+function goPrev(){ const i = currentIndex(); if (i > 0) showPage(PAGES[i-1].id); }
+function goNext(){ const i = currentIndex(); if (i >= 0 && i < PAGES.length - 1) showPage(PAGES[i+1].id); }
+
+/* ==============================================================
+   VOICE PANEL UI — two large cards
+   ============================================================== */
+function buildVoicePanel(){
+  const list = $('#spkList');
+  let html = '';
+  SPEAKERS.forEach(function(sp){
+    const gBadge = sp.gender === 'male'
+      ? '<span class="badge male">MALE</span>'
+      : '<span class="badge female">FEMALE</span>';
+    const q = sp.quality || 'STANDARD';
+    const offBadge = sp.offline ? '<span class="badge offline">OFFLINE</span>' : '';
+    const shifted = sp.crossGender ? '<span class="badge shifted">PITCH-SHIFTED</span>' : '';
+    const pitchPill = sp.gender === 'male'
+      ? '<span class="tpill deep">Deep</span>'
+      : '<span class="tpill high">Warm</span>';
+
+    html += '<div class="spk" data-spk="' + sp.id + '">';
+    html += '<div class="spk-top">';
+    html += '<span class="spk-name"><span class="flag">' + sp.flag + '</span>' + esc(sp.name) + '</span>';
+    html += gBadge;
+    html += '<span class="badge ' + q.toLowerCase() + '">' + q + '</span>';
+    html += offBadge;
+    html += shifted;
+    html += '<button class="play" data-play="' + sp.id + '" aria-label="Hear ' + esc(sp.name) + '">▶</button>';
+    html += '</div>';
+    html += '<div class="spk-desc">' + esc(sp.label) + ' · ' + esc(sp.desc) + '</div>';
+    html += '<div class="pills">';
+    html += pitchPill;
+    html += '<span class="tpill nat">Natural pace</span>';
+    html += '</div></div>';
+  });
+  list.innerHTML = html;
+
+  $$('.spk', list).forEach(function(card){
+    card.addEventListener('click', function(e){
+      if (e.target.closest('[data-play]')) return;
+      selectSpeaker(card.getAttribute('data-spk'), true);
+    });
+  });
+  $$('[data-play]', list).forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      const sp = SPEAKERS.find(function(s){ return s.id === btn.getAttribute('data-play'); });
+      if (sp){ selectSpeaker(sp.id, false); previewSpeaker(sp); }
+    });
+  });
+  markSelectedSpeaker();
+  updateVoiceStatus();
+}
+function markSelectedSpeaker(){
+  $$('.spk').forEach(function(c){
+    c.classList.toggle('sel', selectedSpeaker && c.getAttribute('data-spk') === selectedSpeaker.id);
+  });
+  const sel = $('#welcomeVoiceSelect');
+  if (sel && selectedSpeaker) sel.value = selectedSpeaker.id;
+  const hint = $('#welcomeVoiceHint');
+  if (hint && selectedSpeaker){
+    const g = selectedSpeaker.gender === 'male' ? '♂ male' : '♀ female';
+    hint.textContent = selectedSpeaker.flag + ' ' + selectedSpeaker.name + ' (' + g + ') · ' + selectedSpeaker.desc;
+  }
+  const cn = $('#curName');
+  if (cn && selectedSpeaker){
+    const g = selectedSpeaker.gender === 'male' ? '♂' : '♀';
+    cn.textContent = selectedSpeaker.flag + ' ' + selectedSpeaker.name + ' ' + g;
+  }
+  const cd = $('#curDesc');
+  if (cd && selectedSpeaker){
+    const g = selectedSpeaker.gender === 'male' ? 'Male' : 'Female';
+    cd.textContent = g + ' voice · ' + selectedSpeaker.desc;
+  }
+}
+function selectSpeaker(id, autoPreview){
+  const sp = SPEAKERS.find(function(s){ return s.id === id; });
+  if (!sp) return;
+  selectedSpeaker = sp;
+  SafeStorage.set(LS.speaker, id);
+  markSelectedSpeaker();
+  if (autoPreview) previewSpeaker(sp);
+}
+function syncRateUI(){
+  const slider = $('#rateSlider');
+  if (slider) slider.value = rateMultiplier;
+  const rv = $('#rateVal');
+  if (rv) rv.textContent = rateMultiplier.toFixed(2) + '×';
+  const w = $('#welcomeRate');
+  if (w) w.value = rateMultiplier;
+  const wrv = $('#welcomeRateVal');
+  if (wrv) wrv.textContent = rateMultiplier.toFixed(2) + '×';
+}
+
+/* ==============================================================
+   INIT
+   ============================================================== */
+function initVoiceSettings(){
+  const savedId = SafeStorage.get(LS.speaker);
+  const savedRate = SafeStorage.get(LS.rate);
+  selectedSpeaker = SPEAKERS.find(function(s){ return s.id === savedId; }) || SPEAKERS[0];
+  if (savedRate){
+    const r = parseFloat(savedRate);
+    if (!isNaN(r) && r >= 0.85 && r <= 1.15) rateMultiplier = r;
+  }
+  const slider = $('#rateSlider');
+  if (slider){
+    slider.value = rateMultiplier;
+    $('#rateVal').textContent = rateMultiplier.toFixed(2) + '×';
+    slider.addEventListener('input', function(){
+      rateMultiplier = parseFloat(this.value);
+      syncRateUI();
+      SafeStorage.set(LS.rate, String(rateMultiplier));
+    });
+  }
+}
+function initEvents(){
+  $('#menuBtn').addEventListener('click', openMenu);
+  $('#menuPanel').addEventListener('click', function(e){ if (e.target === this) closeMenu(); });
+  $('#voiceBtn').addEventListener('click', openVoicePanel);
+  $('#vpClose').addEventListener('click', closeVoicePanel);
+  $('#voicePanel').addEventListener('click', function(e){ if (e.target === this) closeVoicePanel(); });
+  $('#stopFab').addEventListener('click', stopSpeak);
+  const retrySpeechBtn = $('#retrySpeechBtn');
+  if (retrySpeechBtn) retrySpeechBtn.addEventListener('click', function(){
+    voiceLoadAttempts = 0;
+    setupSynthListeners();
+    loadVoices();
+    updateVoiceStatus();
+    refreshSpeechStatus();
+    toast('🔄 Re-checking speech support…');
+  });
+  const bannerOpenBtn = $('#bannerOpenBtn');
+  if (bannerOpenBtn) bannerOpenBtn.addEventListener('click', function(){
+    openInSystemBrowser();
+  });
+  const bannerCloseBtn = $('#bannerCloseBtn');
+  if (bannerCloseBtn) bannerCloseBtn.addEventListener('click', function(){
+    $('#inAppBanner').classList.add('hidden');
+    document.body.style.paddingTop = '';
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape'){ closeMenu(); closeVoicePanel(); stopSpeak(); }
+    if (e.key === ' ' && !e.target.closest('button') && !e.target.closest('input') && !e.target.closest('select')){
+      e.preventDefault(); stopSpeak();
+    }
+    if (e.altKey && e.key === 'ArrowLeft'){ e.preventDefault(); goPrev(); }
+    if (e.altKey && e.key === 'ArrowRight'){ e.preventDefault(); goNext(); }
+  });
+  function updateOnline(){ $('#offlineBanner').classList.toggle('hidden', navigator.onLine); }
+  window.addEventListener('online', function(){ updateOnline(); toast('Back online ✓'); });
+  window.addEventListener('offline', function(){ updateOnline(); toast('Offline — speech still works with local voices ✓'); });
+  updateOnline();
+}
+function initPWA(){
+  try {
+    const icon = 'data:image/svg+xml;base64,' + btoa(
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">' +
+      '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
+      '<stop offset="0" stop-color="#6d28d9"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>' +
+      '<rect width="192" height="192" rx="42" fill="url(#g)"/>' +
+      '<text x="96" y="122" font-size="88" text-anchor="middle" fill="#fff" font-family="Segoe UI,Arial" font-weight="bold">V</text>' +
+      '</svg>');
+    const manifest = {
+      name: 'Comprehensive Vocabulary – Egyptian Baccalaureate',
+      short_name: 'Vocabulary', start_url: '.', display: 'standalone',
+      background_color: '#f6f4ff', theme_color: '#6d28d9',
+      icons: [
+        { src: icon, sizes: '192x192', type: 'image/svg+xml', purpose: 'any maskable' },
+        { src: icon, sizes: '512x512', type: 'image/svg+xml', purpose: 'any maskable' }
+      ]
+    };
+    const blob = new Blob([JSON.stringify(manifest)], { type:'application/manifest+json' });
+    const link = document.createElement('link');
+    link.rel = 'manifest'; link.href = URL.createObjectURL(blob);
+    document.head.appendChild(link);
+  } catch(e){}
+  if ('serviceWorker' in navigator && location.protocol !== 'file:'){
+    try {
+      const swCode =
+        "self.addEventListener('install',function(e){self.skipWaiting();});" +
+        "self.addEventListener('activate',function(e){e.waitUntil(self.clients.claim());});" +
+        "self.addEventListener('fetch',function(e){" +
+        "  if(e.request.method!=='GET')return;" +
+        "  e.respondWith(caches.open('vocab-v1').then(function(c){" +
+        "    return fetch(e.request).then(function(r){c.put(e.request,r.clone());return r;})" +
+        "      .catch(function(){return c.match(e.request);});" +
+        "  }));" +
+        "});";
+      const swBlob = new Blob([swCode], { type:'text/javascript' });
+      navigator.serviceWorker.register(URL.createObjectURL(swBlob)).catch(function(){});
+    } catch(e){}
+  }
+  let deferredPrompt = null;
+  const installBtn = $('#installBtn');
+  window.addEventListener('beforeinstallprompt', function(e){
+    e.preventDefault(); deferredPrompt = e; installBtn.classList.remove('hidden');
+  });
+  installBtn.addEventListener('click', function(){
+    if (!deferredPrompt){ toast('Use your browser menu → Add to Home Screen'); return; }
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(function(){ deferredPrompt = null; installBtn.classList.add('hidden'); });
+  });
+  window.addEventListener('appinstalled', function(){ installBtn.classList.add('hidden'); toast('App installed ✓'); });
+  if (isIOS && !isStandalone){
+    setTimeout(function(){
+      if (!inAppInfo) toast('Tap Share → Add to Home Screen', 3800);
+    }, 3000);
+  }
+}
+function boot(){
+  loadVisited();
+  buildAllPages();
+  buildMenu();
+  initVoiceSettings();
+  buildVoicePanel();
+  syncRateUI();
+  initEvents();
+  initPWA();
+  if (inAppInfo && !isStandalone){
+    setTimeout(showInAppBannerIfNeeded, 600);
+  }
+  let startId = 'welcome';
+  const saved = SafeStorage.get(LS.page);
+  if (saved && PAGES.some(function(p){ return p.id === saved; })) startId = saved;
+  showPage(startId);
+  setTimeout(function(){ loadVoices(); buildVoicePanel(); markSelectedSpeaker(); refreshSpeechStatus(); }, 800);
+  setTimeout(function(){ loadVoices(); setupSynthListeners(); refreshSpeechStatus(); }, 2000);
+  setTimeout(function(){ loadVoices(); setupSynthListeners(); refreshSpeechStatus(); }, 4500);
+}
+if (document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', boot); }
+else { boot(); }
+</script>
+</body>
+</html>
